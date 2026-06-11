@@ -18,7 +18,7 @@ export function FloatingActions() {
       <a
         href={telHref(SITE.phonePrimary)}
         aria-label="Call"
-        className="grid h-13 w-13 place-items-center rounded-full bg-gradient-red p-3 text-white shadow-glow-red transition-transform hover:scale-105"
+        className="grid h-14 w-14 place-items-center rounded-full bg-gradient-red text-white shadow-glow-red transition-transform hover:scale-105"
       >
         <Phone className="h-5 w-5" />
       </a>
