@@ -11,9 +11,8 @@ const badges = [
 
 export function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden pt-28 sm:pt-32 lg:pt-36">
-      <div className="absolute inset-0 -z-10 bg-gradient-hero" />
-      <div className="absolute inset-0 -z-10 bg-gradient-mesh opacity-70" />
+    <section id="top" className="relative overflow-hidden bg-gradient-hero pt-28 sm:pt-32 lg:pt-36">
+      <div className="pointer-events-none absolute inset-0 bg-gradient-mesh opacity-70" />
 
       <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 pb-16 sm:px-6 lg:grid-cols-12 lg:gap-8 lg:pb-24 lg:px-8">
         {/* Copy */}
