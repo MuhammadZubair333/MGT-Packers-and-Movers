@@ -27,11 +27,10 @@ export function QuoteForm() {
   }
 
   return (
-    <section id="quote" className="relative scroll-mt-24 overflow-hidden py-20 sm:py-28">
-      <div className="absolute inset-0 -z-10 bg-gradient-navy" />
-      <div className="absolute inset-0 -z-10 bg-gradient-mesh opacity-40" />
+    <section id="quote" className="relative scroll-mt-24 overflow-hidden bg-gradient-navy py-20 sm:py-28">
+      <div className="pointer-events-none absolute inset-0 bg-gradient-mesh opacity-40" />
 
-      <div className="mx-auto grid max-w-7xl items-start gap-10 px-4 sm:px-6 lg:grid-cols-5 lg:px-8">
+      <div className="relative mx-auto grid max-w-7xl items-start gap-10 px-4 sm:px-6 lg:grid-cols-5 lg:px-8">
         <div className="text-white lg:col-span-2">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/70">
             Get a Free Quote

@@ -11,11 +11,10 @@ const badges = [
 
 export function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden pt-28 sm:pt-32 lg:pt-36">
-      <div className="absolute inset-0 -z-10 bg-gradient-hero" />
-      <div className="absolute inset-0 -z-10 bg-gradient-mesh opacity-70" />
+    <section id="top" className="relative overflow-hidden bg-gradient-hero pt-28 sm:pt-32 lg:pt-36">
+      <div className="pointer-events-none absolute inset-0 bg-gradient-mesh opacity-70" />
 
-      <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 pb-16 sm:px-6 lg:grid-cols-12 lg:gap-8 lg:pb-24 lg:px-8">
+      <div className="relative mx-auto grid max-w-7xl items-center gap-10 px-4 pb-16 sm:px-6 lg:grid-cols-12 lg:gap-8 lg:pb-24 lg:px-8">
         {/* Copy */}
         <div className="lg:col-span-6">
           <span className="inline-flex items-center gap-2 rounded-full border border-border bg-white/70 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-navy shadow-soft backdrop-blur">
@@ -68,13 +67,13 @@ export function Hero() {
         <div className="relative lg:col-span-6">
           <div className="absolute -inset-4 -z-10 rounded-[2rem] bg-gradient-navy opacity-10 blur-2xl" />
           <div className="relative overflow-hidden rounded-[2rem] border border-border bg-white shadow-card">
-            <div className="aspect-[16/11] w-full overflow-hidden">
+            <div className="aspect-[4/3] w-full overflow-hidden bg-[oklch(0.96_0.006_250)] sm:aspect-[16/12]">
               <img
                 src={heroTruck}
                 alt="MGT Packers and Movers truck loaded with furniture and boxes for a house shift in Karachi"
                 width={1600}
-                height={1100}
-                className="h-full w-full animate-truck object-cover"
+                height={1200}
+                className="h-full w-full animate-truck object-cover object-center"
                 fetchPriority="high"
               />
             </div>
@@ -94,7 +93,7 @@ export function Hero() {
                   </div>
                   <a
                     href="#quote"
-                    className="rounded-full bg-navy px-4 py-2 text-xs font-semibold text-white shadow-glow-navy"
+                    className="shrink-0 rounded-full bg-navy px-4 py-2 text-xs font-semibold text-white shadow-glow-navy"
                   >
                     Get Price
                   </a>
