@@ -14,7 +14,7 @@ export function Hero() {
     <section id="top" className="relative overflow-hidden bg-gradient-hero pt-28 sm:pt-32 lg:pt-36">
       <div className="pointer-events-none absolute inset-0 bg-gradient-mesh opacity-70" />
 
-      <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 pb-16 sm:px-6 lg:grid-cols-12 lg:gap-8 lg:pb-24 lg:px-8">
+      <div className="relative mx-auto grid max-w-7xl items-center gap-10 px-4 pb-16 sm:px-6 lg:grid-cols-12 lg:gap-8 lg:pb-24 lg:px-8">
         {/* Copy */}
         <div className="lg:col-span-6">
           <span className="inline-flex items-center gap-2 rounded-full border border-border bg-white/70 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-navy shadow-soft backdrop-blur">
