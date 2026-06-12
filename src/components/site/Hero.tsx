@@ -67,13 +67,13 @@ export function Hero() {
         <div className="relative lg:col-span-6">
           <div className="absolute -inset-4 -z-10 rounded-[2rem] bg-gradient-navy opacity-10 blur-2xl" />
           <div className="relative overflow-hidden rounded-[2rem] border border-border bg-navy-deep shadow-card">
-            <div className="aspect-[5/4] w-full overflow-hidden sm:aspect-[16/11]">
+            <div className="aspect-[16/10] w-full overflow-hidden sm:aspect-[16/11]">
               <img
                 src={heroTruck}
                 alt="MGT Packers and Movers truck loaded with furniture and boxes for a house shift in Karachi"
                 width={1920}
                 height={1080}
-                className="h-full w-full animate-truck object-cover object-[70%_center]"
+                className="h-full w-full animate-truck object-cover object-center"
                 fetchPriority="high"
               />
             </div>
