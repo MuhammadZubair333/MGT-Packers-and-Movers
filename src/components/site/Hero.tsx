@@ -66,13 +66,13 @@ export function Hero() {
         {/* Visual */}
         <div className="relative lg:col-span-6">
           <div className="absolute -inset-4 -z-10 rounded-[2rem] bg-gradient-navy opacity-10 blur-2xl" />
-          <div className="relative overflow-hidden rounded-[2rem] border border-border bg-white shadow-card">
-            <div className="aspect-[4/3] w-full overflow-hidden bg-[oklch(0.96_0.006_250)] sm:aspect-[16/12]">
+          <div className="relative overflow-hidden rounded-[2rem] border border-border bg-navy-deep shadow-card">
+            <div className="aspect-[16/10] w-full overflow-hidden sm:aspect-[16/11]">
               <img
                 src={heroTruck}
                 alt="MGT Packers and Movers truck loaded with furniture and boxes for a house shift in Karachi"
-                width={1600}
-                height={1200}
+                width={1920}
+                height={1080}
                 className="h-full w-full animate-truck object-cover object-center"
                 fetchPriority="high"
               />
