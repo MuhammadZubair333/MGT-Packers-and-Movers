@@ -67,13 +67,13 @@ export function Hero() {
         <div className="relative lg:col-span-6">
           <div className="absolute -inset-4 -z-10 rounded-[2rem] bg-gradient-navy opacity-10 blur-2xl" />
           <div className="relative overflow-hidden rounded-[2rem] border border-border bg-white shadow-card">
-            <div className="aspect-[16/11] w-full overflow-hidden">
+            <div className="aspect-[4/3] w-full overflow-hidden bg-[oklch(0.96_0.006_250)] sm:aspect-[16/12]">
               <img
                 src={heroTruck}
                 alt="MGT Packers and Movers truck loaded with furniture and boxes for a house shift in Karachi"
                 width={1600}
-                height={1100}
-                className="h-full w-full animate-truck object-cover"
+                height={1200}
+                className="h-full w-full animate-truck object-cover object-center"
                 fetchPriority="high"
               />
             </div>
@@ -93,7 +93,7 @@ export function Hero() {
                   </div>
                   <a
                     href="#quote"
-                    className="rounded-full bg-navy px-4 py-2 text-xs font-semibold text-white shadow-glow-navy"
+                    className="shrink-0 rounded-full bg-navy px-4 py-2 text-xs font-semibold text-white shadow-glow-navy"
                   >
                     Get Price
                   </a>
