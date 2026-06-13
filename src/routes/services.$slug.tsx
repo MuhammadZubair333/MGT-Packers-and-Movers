@@ -7,8 +7,10 @@ import { QuoteForm } from "@/components/site/QuoteForm";
 import { getService, getServiceIcon, SERVICES } from "@/lib/services";
 import { SITE, telHref, waHref } from "@/lib/site";
 
+import type { Service } from "@/lib/services";
+
 export const Route = createFileRoute("/services/$slug")({
-  loader: ({ params }) => {
+  loader: ({ params }): { service: Service } => {
     const service = getService(params.slug);
     if (!service) throw notFound();
     return { service };
