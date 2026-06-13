@@ -1,0 +1,283 @@
+{
+  "services": [
+    {
+      "slug": "house-shifting",
+      "title": "House Shifting",
+      "tagline": "Stress-free home relocation, door to door",
+      "icon": "house-shifting",
+      "metaTitle": "House Shifting Services in Karachi & Pakistan | MGT Packers & Movers",
+      "metaDescription": "Professional house shifting services in Karachi and across Pakistan. Expert packing, safe loading, on-time delivery. Get a free quote on WhatsApp today.",
+      "keywords": ["house shifting Karachi", "home relocation Pakistan", "packers and movers Karachi"],
+      "intro": "Moving home is one of life's biggest events — and one of the most stressful. MGT Packers & Movers handles every step of your house shifting in Karachi and across Pakistan with trained labour, quality packing materials and the right vehicle for the job. Whether you're moving a 1-bedroom flat or a full bungalow, we make sure your belongings arrive safely, on time and without a scratch.",
+      "features": [
+        { "title": "Full-Service Move", "desc": "Disassembly, packing, loading, transport, unloading and reassembly — all by one team." },
+        { "title": "Quality Packing Materials", "desc": "Bubble wrap, corrugated sheets, sturdy boxes, blankets and tape for every category of item." },
+        { "title": "Trained Labour", "desc": "Experienced movers who handle fragile, heavy and bulky furniture with care." },
+        { "title": "Right-Sized Vehicle", "desc": "From Suzuki pickups to 40 ft trailers — we match the truck to your home size." },
+        { "title": "On-Time Delivery", "desc": "Pre-planned schedules so your new home is ready when you are." },
+        { "title": "Transparent Pricing", "desc": "Clear, written quotes with no hidden charges or last-minute surprises." }
+      ],
+      "process": [
+        { "step": "Free Survey & Quote", "desc": "Share your move details on WhatsApp or call — we send a clear quote within hours." },
+        { "step": "Packing Day", "desc": "Our team arrives with materials and packs every item room-by-room with labels." },
+        { "step": "Safe Transport", "desc": "Loaded into the right-sized vehicle and driven by experienced staff." },
+        { "step": "Unload & Setup", "desc": "We unload, unpack and reassemble furniture at your new home." }
+      ],
+      "faqs": [
+        { "q": "How much does house shifting cost in Karachi?", "a": "Cost depends on the size of your home, distance, packing materials needed and floor level. A typical 2-bedroom move within Karachi starts from a few thousand rupees. Share your details on WhatsApp for an exact quote." },
+        { "q": "Do you provide packing materials?", "a": "Yes. We bring bubble wrap, corrugated sheets, cartons, blankets, tape and stretch film. You don't need to buy anything separately." },
+        { "q": "Can you move my house outside Karachi?", "a": "Absolutely. We move homes from Karachi to Lahore, Islamabad, Multan, Faisalabad, Hyderabad and across Pakistan." },
+        { "q": "How long does a house shift take?", "a": "A local Karachi move usually takes one day. Inter-city moves take 1-3 days depending on distance." },
+        { "q": "Are my belongings safe during the move?", "a": "Yes. Our trained team uses quality packing materials and careful handling. We treat every item as if it were our own." }
+      ]
+    },
+    {
+      "slug": "office-relocation",
+      "title": "Office Relocation",
+      "tagline": "Move your office without losing a working day",
+      "icon": "office-relocation",
+      "metaTitle": "Office Relocation Services in Karachi | MGT Packers & Movers",
+      "metaDescription": "Fast, organized office relocation in Karachi and Pakistan. Furniture, IT equipment and files moved safely with minimum downtime. Free quote on WhatsApp.",
+      "keywords": ["office relocation Karachi", "office movers Pakistan", "office shifting"],
+      "intro": "An office move is a logistics challenge — desks, server racks, files, IT equipment and furniture all need to reach the new location and be set up fast. MGT handles full office relocation in Karachi and across Pakistan with planned schedules, careful packing and trained labour, so your team is back to work the next day.",
+      "features": [
+        { "title": "Weekend & Night Moves", "desc": "We plan moves outside working hours to avoid downtime." },
+        { "title": "IT Equipment Handling", "desc": "Computers, monitors, servers and printers packed with anti-static materials." },
+        { "title": "Furniture Disassembly", "desc": "Workstations, conference tables and cabinets disassembled and reassembled by our team." },
+        { "title": "Labelled & Indexed", "desc": "Every box and item labelled by department and destination room for fast unpacking." },
+        { "title": "Confidential Files", "desc": "Sealed file transport with chain-of-custody handling." },
+        { "title": "Project Manager", "desc": "One point of contact from quote to handover." }
+      ],
+      "process": [
+        { "step": "Site Survey", "desc": "We visit your current and new offices to plan the move." },
+        { "step": "Move Plan & Quote", "desc": "Detailed plan with timeline, vehicles, labour and cost." },
+        { "step": "Packing & Loading", "desc": "Off-hours packing, careful loading by trained staff." },
+        { "step": "Setup at New Office", "desc": "Furniture reassembled and equipment placed by department." }
+      ],
+      "faqs": [
+        { "q": "Can you move our office on a weekend?", "a": "Yes — weekend and night moves are our most common request to avoid working-hour downtime." },
+        { "q": "Do you handle server and IT equipment?", "a": "Yes. We use anti-static wrap, foam padding and dedicated boxes for sensitive electronics." },
+        { "q": "Will you reassemble our workstations?", "a": "Yes. Our team disassembles at the old office and reassembles at the new location." },
+        { "q": "Do you move offices across cities?", "a": "Yes. We handle inter-city office relocation across Pakistan." },
+        { "q": "How far in advance should we book?", "a": "We recommend booking 1-2 weeks ahead for a large office. Smaller offices can often be moved within a few days." }
+      ]
+    },
+    {
+      "slug": "packing",
+      "title": "Packing Services",
+      "tagline": "Premium materials, professional packing",
+      "icon": "packing",
+      "metaTitle": "Professional Packing Services in Karachi | MGT Packers & Movers",
+      "metaDescription": "Expert packing services in Karachi with premium materials — bubble wrap, cartons, blankets and trained packers for fragile, electronics and household items.",
+      "keywords": ["packing services Karachi", "professional packers Pakistan", "packing material"],
+      "intro": "Good packing is the difference between a smooth move and broken belongings. MGT's professional packing service in Karachi uses premium materials and trained packers to protect everything from delicate glassware and TVs to heavy furniture and artwork. You can book packing on its own or as part of a full house shift.",
+      "features": [
+        { "title": "Bubble Wrap & Foam", "desc": "Multi-layer protection for fragile and high-value items." },
+        { "title": "Corrugated Sheets", "desc": "Heavy-duty protection for furniture corners and large surfaces." },
+        { "title": "Strong Cartons", "desc": "Double-wall boxes in multiple sizes for books, clothes, kitchenware." },
+        { "title": "TV & Electronics Boxes", "desc": "Dedicated boxes with foam inserts for screens and appliances." },
+        { "title": "Wardrobe Boxes", "desc": "Hanging-ready boxes that keep clothes wrinkle-free." },
+        { "title": "Labelling System", "desc": "Every box labelled by room and contents for fast unpacking." }
+      ],
+      "process": [
+        { "step": "Inventory Walkthrough", "desc": "We assess items and recommend the right materials." },
+        { "step": "Material Delivery", "desc": "All packing supplies brought to your home." },
+        { "step": "Room-by-Room Packing", "desc": "Items packed, labelled and stacked safely." },
+        { "step": "Ready for Transport", "desc": "Boxes are loaded directly or stored until move day." }
+      ],
+      "faqs": [
+        { "q": "Can I book only packing, without transport?", "a": "Yes. Packing is available as a standalone service if you want to handle transport yourself." },
+        { "q": "What kind of packing materials do you use?", "a": "Bubble wrap, foam sheets, corrugated rolls, double-wall cartons, stretch film, blankets and tape." },
+        { "q": "Do you pack fragile items like glassware and artwork?", "a": "Yes. We use multi-layer wrapping and dedicated boxes for fragile and high-value items." },
+        { "q": "How long does packing take for a 2-bedroom home?", "a": "Usually 4-6 hours with a team of 2-3 packers." },
+        { "q": "Will you unpack at the new location?", "a": "Yes, unpacking is available on request as part of the service." }
+      ]
+    },
+    {
+      "slug": "loading-unloading",
+      "title": "Loading & Unloading",
+      "tagline": "Skilled labour for safe handling",
+      "icon": "loading",
+      "metaTitle": "Loading & Unloading Services in Karachi | MGT Packers & Movers",
+      "metaDescription": "Trained loading and unloading labour in Karachi for household goods, furniture and commercial cargo. Hourly or per-job rates. Book on WhatsApp.",
+      "keywords": ["loading unloading Karachi", "movers labour", "furniture loading"],
+      "intro": "Even if you have your own truck, professional loading and unloading is what keeps your belongings safe. MGT supplies trained labour in Karachi for households, shops, warehouses and inter-city cargo — skilled at handling heavy furniture, fragile boxes and bulky appliances without damage.",
+      "features": [
+        { "title": "Trained Movers", "desc": "Experienced with furniture, appliances, glass and heavy crates." },
+        { "title": "Proper Lifting", "desc": "Correct technique to protect items and avoid injuries." },
+        { "title": "Furniture Padding", "desc": "Blankets and straps used to secure load inside the vehicle." },
+        { "title": "Stair & Floor Service", "desc": "Comfortable carrying items up and down stairs and through tight spaces." },
+        { "title": "Flexible Booking", "desc": "Hourly, half-day or full-day rates available." },
+        { "title": "Available Across Karachi", "desc": "Same-day service in most areas of the city." }
+      ],
+      "process": [
+        { "step": "Share Job Details", "desc": "Number of items, floor level and location on WhatsApp." },
+        { "step": "Quick Quote", "desc": "Hourly or fixed-job rate confirmed in minutes." },
+        { "step": "Labour Arrives On Time", "desc": "Team comes equipped with padding and tools." },
+        { "step": "Safe Load or Unload", "desc": "Items handled, stacked and secured properly." }
+      ],
+      "faqs": [
+        { "q": "Can I hire only labour without a truck?", "a": "Yes. We provide loading and unloading labour as a standalone service." },
+        { "q": "How many movers will I need?", "a": "For a 1-bed home, 2 movers usually work. Larger homes or heavy items need 3-4." },
+        { "q": "Do you charge by hour or by job?", "a": "Both options are available — we'll recommend whichever is cheaper for your case." },
+        { "q": "Can your team carry items up several floors?", "a": "Yes. Stair carrying is included; very high floors may have a small surcharge." },
+        { "q": "Is your labour insured?", "a": "Our team is trained for safe handling. Coverage details are shared on request when booking." }
+      ]
+    },
+    {
+      "slug": "warehouse",
+      "title": "Warehouse Storage",
+      "tagline": "Secure short and long-term storage",
+      "icon": "warehouse",
+      "metaTitle": "Warehouse Storage in Karachi | Secure Goods Storage | MGT",
+      "metaDescription": "Secure warehouse storage in Karachi for household and commercial goods. Short-term and long-term plans, clean and monitored facility. Get a quote on WhatsApp.",
+      "keywords": ["warehouse Karachi", "goods storage Pakistan", "household storage"],
+      "intro": "Sometimes your new place isn't ready, or you simply need somewhere safe to keep belongings between moves. MGT offers secure warehouse storage in Karachi for household and commercial goods, with flexible short and long-term plans. Items are stored clean, dry and monitored — and we handle pickup and delivery on both ends.",
+      "features": [
+        { "title": "Clean, Dry Facility", "desc": "Goods stored away from moisture, dust and pests." },
+        { "title": "Short or Long Term", "desc": "From a few days to many months — pay only for what you need." },
+        { "title": "Itemised Inventory", "desc": "Every item logged on intake and check-out." },
+        { "title": "Pickup & Delivery", "desc": "We collect from your home and deliver when you're ready." },
+        { "title": "Household & Commercial", "desc": "Storage for furniture, appliances, stock and equipment." },
+        { "title": "Monitored Premises", "desc": "Round-the-clock secure facility." }
+      ],
+      "process": [
+        { "step": "Tell Us What & How Long", "desc": "Approximate volume and storage duration." },
+        { "step": "Quote & Schedule", "desc": "Transparent monthly rates and pickup slot." },
+        { "step": "Pickup & Intake", "desc": "We pack, label and log every item into storage." },
+        { "step": "Easy Retrieval", "desc": "Request items back any time — we deliver to your new address." }
+      ],
+      "faqs": [
+        { "q": "What's the minimum storage period?", "a": "We offer storage from as little as one week. There's no minimum lock-in." },
+        { "q": "How is pricing calculated?", "a": "Pricing is based on volume (cubic feet) and storage duration. We share an exact monthly figure upfront." },
+        { "q": "Can you pick up items from my home?", "a": "Yes. Pickup, packing and delivery to the warehouse are all included as one service." },
+        { "q": "Is my furniture safe in storage?", "a": "Yes. The facility is clean, dry, monitored and pest-controlled." },
+        { "q": "Can I add or remove items during the storage period?", "a": "Yes, partial pickups and additions can be arranged with advance notice." }
+      ]
+    },
+    {
+      "slug": "cargo",
+      "title": "Cargo Services",
+      "tagline": "Reliable domestic cargo movement",
+      "icon": "cargo",
+      "metaTitle": "Cargo Services in Karachi & Pakistan | MGT Packers & Movers",
+      "metaDescription": "Reliable domestic cargo services from Karachi to all of Pakistan. Safe handling, on-time delivery and full tracking for household and commercial cargo.",
+      "keywords": ["cargo services Karachi", "domestic cargo Pakistan", "Karachi to Lahore cargo"],
+      "intro": "Whether you're sending a few cartons or a full truckload across Pakistan, MGT's cargo services move it safely and on time. We handle household cargo, commercial shipments, machinery, e-commerce stock and personal effects — Karachi to Lahore, Islamabad, Multan, Faisalabad, Peshawar, Hyderabad and beyond.",
+      "features": [
+        { "title": "Nationwide Coverage", "desc": "Karachi to every major city in Pakistan." },
+        { "title": "Right-Sized Vehicle", "desc": "From Suzuki to 40 ft container — match the vehicle to the shipment." },
+        { "title": "Door-to-Door", "desc": "Pickup from your address, delivery to the destination address." },
+        { "title": "Safe Handling", "desc": "Trained staff and proper packing for fragile or heavy cargo." },
+        { "title": "On-Time Delivery", "desc": "Clear timelines committed at booking." },
+        { "title": "Status Updates", "desc": "Stay informed on pickup, transit and delivery." }
+      ],
+      "process": [
+        { "step": "Share Cargo Details", "desc": "Origin, destination, items and approximate weight/volume." },
+        { "step": "Quote & Vehicle", "desc": "We recommend the right truck and quote a fixed rate." },
+        { "step": "Pickup & Transport", "desc": "Cargo collected, loaded and dispatched on schedule." },
+        { "step": "Delivery & Handover", "desc": "Safe unloading and confirmation at destination." }
+      ],
+      "faqs": [
+        { "q": "How long does cargo take from Karachi to Lahore?", "a": "Typically 1-2 days depending on cargo type and vehicle." },
+        { "q": "Do you handle fragile cargo?", "a": "Yes — we use bubble wrap, foam and corrugated sheets to protect fragile shipments." },
+        { "q": "Is door-to-door delivery available?", "a": "Yes, pickup and delivery to specific addresses is included." },
+        { "q": "Can you move commercial stock and machinery?", "a": "Yes, we regularly move business inventory, equipment and machinery." },
+        { "q": "How is cargo pricing calculated?", "a": "Based on distance, vehicle size, weight/volume and handling requirements. We quote a fixed rate upfront." }
+      ]
+    },
+    {
+      "slug": "goods-transport",
+      "title": "Goods Transport",
+      "tagline": "Nationwide goods transport with the right truck",
+      "icon": "goods-transport",
+      "metaTitle": "Goods Transport Services in Karachi & Pakistan | MGT",
+      "metaDescription": "Nationwide goods transport from Karachi. Suzuki to 40 ft trailers for any load — household, industrial or commercial. Free quote on WhatsApp.",
+      "keywords": ["goods transport Karachi", "Pakistan goods transport", "truck transport service"],
+      "intro": "MGT (Majid Goods Transport) is built on goods transport — moving everything from a few household items to full industrial loads across Pakistan. We operate a complete fleet ranging from Suzuki pickups to 40 ft trailers, so we can match the right vehicle to your shipment and keep costs efficient.",
+      "features": [
+        { "title": "Full Vehicle Fleet", "desc": "Suzuki, Shahzore, Mazda, 17/20/24/32/40 ft trucks and trailers." },
+        { "title": "Household & Industrial", "desc": "Equally suited to home moves and factory shipments." },
+        { "title": "Experienced Drivers", "desc": "Long-route drivers who know every major Pakistani city." },
+        { "title": "Loading Crew", "desc": "Trained labour available for loading and unloading on both ends." },
+        { "title": "Fixed-Rate Pricing", "desc": "Transparent per-trip pricing — no surprises on arrival." },
+        { "title": "Same-Day Booking", "desc": "Trucks often available the same day on common routes." }
+      ],
+      "process": [
+        { "step": "Tell Us the Load", "desc": "What, how much, where from and where to." },
+        { "step": "Vehicle Match", "desc": "We recommend the most cost-effective truck size." },
+        { "step": "Load & Dispatch", "desc": "Loaded and on the road on schedule." },
+        { "step": "Confirmed Delivery", "desc": "Safe handover at destination." }
+      ],
+      "faqs": [
+        { "q": "What truck sizes do you have?", "a": "Suzuki pickup, Shahzore, Mazda, 17 ft, 20 ft, 24 ft, 32 ft and 40 ft trailers." },
+        { "q": "Do you transport goods all over Pakistan?", "a": "Yes — Karachi, Lahore, Islamabad, Rawalpindi, Multan, Faisalabad, Peshawar, Quetta, Hyderabad and every major city." },
+        { "q": "Can I get a truck the same day?", "a": "On most common routes, yes. Share your requirement on WhatsApp for current availability." },
+        { "q": "Do you provide loading labour?", "a": "Yes, labour can be added to any transport booking." },
+        { "q": "How is pricing decided?", "a": "Based on truck size, route distance and whether labour or packing is included. We quote a flat per-trip rate." }
+      ]
+    },
+    {
+      "slug": "truck-on-rent",
+      "title": "Truck on Rent",
+      "tagline": "Book the perfect truck for any move",
+      "icon": "truck-rent",
+      "metaTitle": "Truck on Rent in Karachi | Suzuki to 40 ft Trailer | MGT",
+      "metaDescription": "Truck on rent in Karachi for house shifting, goods transport and cargo. Suzuki, Shahzore, Mazda, 17/20/24/32/40 ft. Get the right vehicle and price on WhatsApp.",
+      "keywords": ["truck on rent Karachi", "Mazda for rent", "Shahzore rent", "container truck rent"],
+      "intro": "Need just a truck? MGT's full fleet is available on rent in Karachi and for inter-city trips across Pakistan. Whether it's a Suzuki for a single-room shift or a 40 ft trailer for industrial cargo, you get a clean vehicle, professional driver and an honest, upfront rate.",
+      "features": [
+        { "title": "Complete Fleet", "desc": "Suzuki, Shahzore, Mazda, 17/20/24/32/40 ft." },
+        { "title": "Experienced Drivers", "desc": "Professional, route-savvy drivers." },
+        { "title": "City & Inter-City", "desc": "Within Karachi or to any Pakistani city." },
+        { "title": "Hourly or Per-Trip", "desc": "Choose what works for your job." },
+        { "title": "Optional Labour", "desc": "Add loading/unloading crew on request." },
+        { "title": "Clean Vehicles", "desc": "Well-maintained trucks ready for any cargo." }
+      ],
+      "process": [
+        { "step": "Tell Us the Job", "desc": "Pickup, drop-off and load details." },
+        { "step": "Vehicle Recommendation", "desc": "We suggest the best-fit truck and rate." },
+        { "step": "Driver Arrives", "desc": "Clean truck and professional driver on time." },
+        { "step": "Move Complete", "desc": "Drop-off confirmed at the destination." }
+      ],
+      "faqs": [
+        { "q": "Which truck size do I need?", "a": "Suzuki works for a single room. Mazda or Shahzore for 1-2 bedrooms. 17-20 ft for a 3-bed home. Larger trailers for industrial or commercial loads." },
+        { "q": "Is the driver included in the rent?", "a": "Yes. All rentals include a professional driver and fuel for the agreed route." },
+        { "q": "Can I rent a truck for a few hours only?", "a": "Yes — hourly rates are available for short city jobs." },
+        { "q": "Do you cover inter-city routes?", "a": "Yes, we rent for trips to any major Pakistani city." },
+        { "q": "Can you provide labour for loading?", "a": "Yes, loading and unloading crew can be added to any rental." }
+      ]
+    },
+    {
+      "slug": "car-carrier",
+      "title": "Car Carrier",
+      "tagline": "Safe city-to-city vehicle transport",
+      "icon": "car-carrier",
+      "metaTitle": "Car Carrier Services in Karachi | Vehicle Transport Pakistan | MGT",
+      "metaDescription": "Safe car carrier services from Karachi to every major Pakistani city. Open and covered carriers, careful loading, insured transport. Quote on WhatsApp.",
+      "keywords": ["car carrier Karachi", "vehicle transport Pakistan", "car shifting Karachi to Lahore"],
+      "intro": "Driving your car between cities adds miles, fuel cost and risk. MGT's car carrier service safely transports your vehicle from Karachi to Lahore, Islamabad, Multan, Peshawar and across Pakistan — on open or fully covered carriers depending on your preference and the level of protection you need.",
+      "features": [
+        { "title": "Open & Covered Carriers", "desc": "Choose based on weather, distance and vehicle value." },
+        { "title": "Safe Loading", "desc": "Professional ramps and tie-downs — no scratches, no shifting." },
+        { "title": "Nationwide Routes", "desc": "Karachi to every major city in Pakistan." },
+        { "title": "Multiple Vehicles", "desc": "Single or multi-car shipments." },
+        { "title": "Pickup Coordination", "desc": "Convenient pickup from your home or showroom." },
+        { "title": "On-Time Delivery", "desc": "Committed timelines so you're not left waiting." }
+      ],
+      "process": [
+        { "step": "Vehicle Details", "desc": "Make, model, route and preferred carrier type." },
+        { "step": "Quote & Pickup Slot", "desc": "Fixed rate and pickup window confirmed." },
+        { "step": "Safe Loading", "desc": "Vehicle loaded with ramps and secured." },
+        { "step": "Delivery & Handover", "desc": "Inspected and handed over at destination." }
+      ],
+      "faqs": [
+        { "q": "Open or covered carrier — which should I choose?", "a": "Open is more economical and fine for standard vehicles. Covered is recommended for luxury or new cars or long routes." },
+        { "q": "How long does Karachi to Lahore take?", "a": "Typically 2-3 days depending on carrier loading schedule." },
+        { "q": "Is the vehicle insured during transit?", "a": "We handle vehicles with professional care and tie-downs. Insurance terms are confirmed in writing before booking." },
+        { "q": "Can you pick up from a car showroom?", "a": "Yes — showroom and home pickups are both available." },
+        { "q": "Can you ship more than one vehicle?", "a": "Yes, multi-car shipments are available on the same carrier." }
+      ]
+    }
+  ]
+}

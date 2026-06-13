@@ -1,16 +1,18 @@
 import { useEffect, useState } from "react";
 import { Menu, Phone, X } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 import { Logo } from "./Logo";
 import { SITE, telHref, waHref } from "@/lib/site";
 
-const NAV = [
-  { label: "Home", href: "#top" },
-  { label: "Services", href: "#services" },
-  { label: "Fleet", href: "#fleet" },
-  { label: "Why Us", href: "#why" },
-  { label: "About", href: "#about" },
-  { label: "Gallery", href: "#gallery" },
-  { label: "Contact", href: "#contact" },
+type NavItem = { label: string; href?: string; to?: string };
+const NAV: NavItem[] = [
+  { label: "Home", to: "/" },
+  { label: "Services", to: "/services" },
+  { label: "Fleet", href: "/#fleet" },
+  { label: "Why Us", href: "/#why" },
+  { label: "About", href: "/#about" },
+  { label: "Gallery", href: "/#gallery" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export function Header() {
@@ -34,15 +36,25 @@ export function Header() {
         <Logo />
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Primary">
-          {NAV.map((n) => (
-            <a
-              key={n.href}
-              href={n.href}
-              className="rounded-lg px-3 py-2 text-sm font-medium text-foreground/80 transition-colors hover:bg-accent hover:text-foreground"
-            >
-              {n.label}
-            </a>
-          ))}
+          {NAV.map((n) =>
+            n.to ? (
+              <Link
+                key={n.label}
+                to={n.to}
+                className="rounded-lg px-3 py-2 text-sm font-medium text-foreground/80 transition-colors hover:bg-accent hover:text-foreground"
+              >
+                {n.label}
+              </Link>
+            ) : (
+              <a
+                key={n.label}
+                href={n.href}
+                className="rounded-lg px-3 py-2 text-sm font-medium text-foreground/80 transition-colors hover:bg-accent hover:text-foreground"
+              >
+                {n.label}
+              </a>
+            ),
+          )}
         </nav>
 
         <div className="flex items-center gap-2">
@@ -99,16 +111,27 @@ export function Header() {
             </button>
           </div>
           <nav className="flex-1 overflow-y-auto px-3 py-4">
-            {NAV.map((n) => (
-              <a
-                key={n.href}
-                href={n.href}
-                onClick={() => setOpen(false)}
-                className="block rounded-lg px-3 py-3 text-base font-medium text-foreground hover:bg-accent"
-              >
-                {n.label}
-              </a>
-            ))}
+            {NAV.map((n) =>
+              n.to ? (
+                <Link
+                  key={n.label}
+                  to={n.to}
+                  onClick={() => setOpen(false)}
+                  className="block rounded-lg px-3 py-3 text-base font-medium text-foreground hover:bg-accent"
+                >
+                  {n.label}
+                </Link>
+              ) : (
+                <a
+                  key={n.label}
+                  href={n.href}
+                  onClick={() => setOpen(false)}
+                  className="block rounded-lg px-3 py-3 text-base font-medium text-foreground hover:bg-accent"
+                >
+                  {n.label}
+                </a>
+              ),
+            )}
           </nav>
           <div className="space-y-2 border-t border-border p-4">
             <a
