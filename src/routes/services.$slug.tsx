@@ -94,7 +94,7 @@ export const Route = createFileRoute("/services/$slug")({
 });
 
 function ServiceDetailPage() {
-  const { service } = Route.useLoaderData();
+  const { service } = Route.useLoaderData() as { service: Service };
   const related = SERVICES.filter((s) => s.slug !== service.slug).slice(0, 3);
   const waMsg = `Hi MGT, I'd like a quote for ${service.title}.`;
 
