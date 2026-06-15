@@ -18,7 +18,7 @@ const SERVICES = [
   { slug: "warehouse", title: "Warehouse Storage", desc: "Secure short and long-term storage for household and commercial goods.", img: warehouse },
   { slug: "cargo", title: "Cargo Services", desc: "Reliable domestic cargo movement with full tracking and care.", img: cargo },
   { slug: "goods-transport", title: "Goods Transport", desc: "Nationwide goods transport with the right vehicle for any load.", img: goods },
-  { slug: "truck-on-rent", title: "Truck on Rent", desc: "Suzuki to 40 ft trailers — book the perfect truck for your move.", img: truckRent },
+  { slug: "truck-on-rent", title: "Truck on Rent", desc: "Suzuki to 40 ft trailers. Book the perfect truck for your move.", img: truckRent },
   { slug: "car-carrier", title: "Car Carrier", desc: "Safe city-to-city vehicle transport on covered and open carriers.", img: carCarrier },
 ];
 
@@ -34,7 +34,7 @@ export function Services() {
             Complete Relocation &amp; Transport Solutions
           </h2>
           <p className="mt-4 text-base text-muted-foreground">
-            From homes and offices to industrial goods and vehicles — MGT handles every move with
+            From homes and offices to industrial goods and vehicles, MGT handles every move with
             professional packing, safe loading and on-time delivery.
           </p>
         </div>

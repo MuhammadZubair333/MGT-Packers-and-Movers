@@ -35,7 +35,7 @@ export function About() {
           <p className="mt-5 text-base text-muted-foreground sm:text-lg">
             MGT Packers &amp; Movers is a trusted name in the relocation industry, providing safe,
             fast and affordable moving solutions across the country. Our professional team handles
-            every move — from homes and offices to industrial goods and vehicles — with complete
+            every move, from homes and offices to industrial goods and vehicles, with complete
             care and commitment.
           </p>
           <p className="mt-4 text-base text-muted-foreground sm:text-lg">
@@ -47,12 +47,12 @@ export function About() {
           <figure className="mt-8 rounded-2xl border border-border bg-accent/50 p-6">
             <Quote className="h-6 w-6 text-brand-red" />
             <blockquote className="mt-3 text-base italic text-navy-deep sm:text-lg">
-              &ldquo;When I started MGT in 2010, my vision was a service people could rely on —
+              &ldquo;When I started MGT in 2010, my vision was a service people could rely on:
               honest, careful and professional. Today our team treats every client&apos;s
               belongings with the same care as our own.&rdquo;
             </blockquote>
             <figcaption className="mt-4 text-sm font-semibold text-navy">
-              Haji Abdul Majid Ali —{" "}
+              Haji Abdul Majid Ali ·{" "}
               <span className="font-normal text-muted-foreground">Founder &amp; CEO</span>
             </figcaption>
           </figure>

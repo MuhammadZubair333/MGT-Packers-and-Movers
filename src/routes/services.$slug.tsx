@@ -4,7 +4,7 @@ import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { FloatingActions } from "@/components/site/FloatingActions";
 import { QuoteForm } from "@/components/site/QuoteForm";
-import { getService, getServiceIcon, SERVICES } from "@/lib/services";
+import { getService, getServiceIcon, SERVICE_PHOTOS, SERVICES } from "@/lib/services";
 import { SITE, telHref, waHref } from "@/lib/site";
 
 import type { Service } from "@/lib/services";
@@ -97,10 +97,11 @@ function ServiceDetailPage() {
   const { service } = Route.useLoaderData() as { service: Service };
   const related = SERVICES.filter((s) => s.slug !== service.slug).slice(0, 3);
   const waMsg = `Hi MGT, I'd like a quote for ${service.title}.`;
+  const photos = SERVICE_PHOTOS[service.slug];
 
   return (
     <div className="min-h-screen bg-background">
-      <Header />
+      <Header darkBackground />
       <main>
         {/* Hero */}
         <section className="relative overflow-hidden bg-gradient-navy pt-32 pb-16 text-white sm:pt-40 sm:pb-24">
@@ -145,14 +146,37 @@ function ServiceDetailPage() {
               </div>
               <div className="relative mx-auto w-full max-w-sm">
                 <div className="absolute -inset-4 rounded-[2rem] bg-gradient-red opacity-30 blur-2xl" />
-                <div className="glass-dark relative grid aspect-square place-items-center rounded-[2rem] p-8">
-                  <img
-                    src={getServiceIcon(service.icon)}
-                    alt={`${service.title} icon`}
-                    width={320}
-                    height={320}
-                    className="h-full w-full max-w-[280px] object-contain animate-float"
-                  />
+                <div className="relative overflow-hidden rounded-[2rem] aspect-[4/3]">
+                  {photos ? (
+                    <img
+                      src={photos.heroImage}
+                      alt={service.title}
+                      width={900}
+                      height={675}
+                      className="h-full w-full object-cover"
+                      fetchPriority="high"
+                    />
+                  ) : (
+                    <div className="glass-dark grid h-full place-items-center p-8">
+                      <img
+                        src={getServiceIcon(service.icon)}
+                        alt={`${service.title} icon`}
+                        width={280}
+                        height={280}
+                        className="h-full w-full max-w-[280px] object-contain animate-float"
+                      />
+                    </div>
+                  )}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+                  <div className="absolute bottom-4 right-4 glass-dark rounded-2xl p-3">
+                    <img
+                      src={getServiceIcon(service.icon)}
+                      alt={`${service.title} icon`}
+                      width={56}
+                      height={56}
+                      className="h-14 w-14 object-contain"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -186,6 +210,36 @@ function ServiceDetailPage() {
             </div>
           </div>
         </section>
+
+        {/* Photo gallery */}
+        {photos && (
+          <section className="py-14 sm:py-20">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+              <div className="mb-8 text-center">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-red">
+                  Our Work
+                </p>
+                <h2 className="mt-2 text-2xl font-extrabold text-navy-deep sm:text-3xl">
+                  See it in action
+                </h2>
+              </div>
+              <div className="grid gap-4 sm:grid-cols-3">
+                {photos.gallery.map((src, i) => (
+                  <div key={i} className="overflow-hidden rounded-2xl aspect-[4/3]">
+                    <img
+                      src={src}
+                      alt={`${service.title} – photo ${i + 1}`}
+                      loading="lazy"
+                      width={700}
+                      height={525}
+                      className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* Process */}
         <section className="bg-accent py-20 sm:py-28">

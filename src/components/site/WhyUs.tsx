@@ -13,7 +13,7 @@ import {
 const ITEMS = [
   { icon: Users, title: "Experienced Team", desc: "Trained movers with years of on-ground experience." },
   { icon: ShieldCheck, title: "Safe & Secure Handling", desc: "Padded wraps, sturdy boxes, careful handling." },
-  { icon: Clock, title: "On-Time Delivery", desc: "We respect your schedule — moves arrive on time." },
+  { icon: Clock, title: "On-Time Delivery", desc: "We respect your schedule. Moves arrive on time." },
   { icon: Wallet, title: "Affordable Pricing", desc: "Transparent quotes, no hidden charges." },
   { icon: DoorOpen, title: "Door-to-Door Service", desc: "Pickup, transport and setup at the new place." },
   { icon: PackageCheck, title: "Professional Packing", desc: "Premium materials for fragile, electronics & more." },
@@ -38,7 +38,7 @@ export function WhyUs() {
             </h2>
           </div>
           <p className="text-white/80 lg:text-lg">
-            We treat every client&apos;s belongings with the same care as our own — because your
+            We treat every client&apos;s belongings with the same care as our own, because your
             trust is our success.
           </p>
         </div>

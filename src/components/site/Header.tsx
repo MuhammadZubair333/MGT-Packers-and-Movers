@@ -15,7 +15,7 @@ const NAV: NavItem[] = [
   { label: "Contact", href: "/#contact" },
 ];
 
-export function Header() {
+export function Header({ darkBackground = false }: { darkBackground?: boolean }) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -25,6 +25,11 @@ export function Header() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  const linkCls =
+    !scrolled && darkBackground
+      ? "rounded-lg px-3 py-2 text-sm font-medium text-white/90 transition-colors hover:bg-white/10 hover:text-white"
+      : "rounded-lg px-3 py-2 text-sm font-medium text-foreground/80 transition-colors hover:bg-accent hover:text-foreground";
 
   return (
     <header
@@ -38,19 +43,11 @@ export function Header() {
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Primary">
           {NAV.map((n) =>
             n.to ? (
-              <Link
-                key={n.label}
-                to={n.to}
-                className="rounded-lg px-3 py-2 text-sm font-medium text-foreground/80 transition-colors hover:bg-accent hover:text-foreground"
-              >
+              <Link key={n.label} to={n.to} className={linkCls}>
                 {n.label}
               </Link>
             ) : (
-              <a
-                key={n.label}
-                href={n.href}
-                className="rounded-lg px-3 py-2 text-sm font-medium text-foreground/80 transition-colors hover:bg-accent hover:text-foreground"
-              >
+              <a key={n.label} href={n.href} className={linkCls}>
                 {n.label}
               </a>
             ),

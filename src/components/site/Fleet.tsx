@@ -32,7 +32,7 @@ export function Fleet() {
             The Right Truck for Every Move
           </h2>
           <p className="mt-4 text-base text-muted-foreground">
-            From a single-room shift to nationwide cargo — pick from a wide range of trucks and
+            From a single-room shift to nationwide cargo, pick from a wide range of trucks and
             containers, all maintained and driven by trained professionals.
           </p>
         </div>

@@ -7,6 +7,7 @@ import { About } from "@/components/site/About";
 import { Process } from "@/components/site/Process";
 import { Fleet } from "@/components/site/Fleet";
 import { Trust } from "@/components/site/Trust";
+import { TruckScene } from "@/components/site/TruckScene";
 import { QuoteForm } from "@/components/site/QuoteForm";
 import { Gallery } from "@/components/site/Gallery";
 import { Testimonials } from "@/components/site/Testimonials";
@@ -16,7 +17,7 @@ import { FloatingActions } from "@/components/site/FloatingActions";
 
 const TITLE = "MGT Packers & Movers in Karachi | House Shifting, Cargo & Truck Rental";
 const DESCRIPTION =
-  "MGT Packers & Movers — professional house shifting, office relocation, packing, warehouse storage, goods transport, cargo, truck rental and car carrier services across Karachi and all of Pakistan.";
+  "MGT Packers & Movers: professional house shifting, office relocation, packing, warehouse storage, goods transport, cargo, truck rental and car carrier services across Karachi and all of Pakistan.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -71,6 +72,7 @@ function HomePage() {
       <main>
         <Hero />
         <Trust />
+        <TruckScene />
         <Services />
         <WhyUs />
         <About />

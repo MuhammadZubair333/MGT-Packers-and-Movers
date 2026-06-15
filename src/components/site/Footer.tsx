@@ -1,10 +1,18 @@
 import { Facebook, Instagram, Mail, MapPin, Phone } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 import { Logo } from "./Logo";
 import { SITE, telHref, waHref } from "@/lib/site";
 
 const SERVICES = [
-  "House Shifting", "Office Relocation", "Packing Services", "Loading & Unloading",
-  "Warehouse Storage", "Cargo Services", "Goods Transport", "Truck on Rent", "Car Carrier",
+  { label: "House Shifting",     slug: "house-shifting" },
+  { label: "Office Relocation",  slug: "office-relocation" },
+  { label: "Packing Services",   slug: "packing" },
+  { label: "Loading & Unloading",slug: "loading-unloading" },
+  { label: "Warehouse Storage",  slug: "warehouse" },
+  { label: "Cargo Services",     slug: "cargo" },
+  { label: "Goods Transport",    slug: "goods-transport" },
+  { label: "Truck on Rent",      slug: "truck-on-rent" },
+  { label: "Car Carrier",        slug: "car-carrier" },
 ];
 
 export function Footer() {
@@ -36,8 +44,14 @@ export function Footer() {
           <h3 className="text-sm font-bold uppercase tracking-wider text-white/80">Services</h3>
           <ul className="mt-4 space-y-2.5 text-sm text-white/75">
             {SERVICES.map((s) => (
-              <li key={s}>
-                <a href="#services" className="transition-colors hover:text-white">{s}</a>
+              <li key={s.slug}>
+                <Link
+                  to="/services/$slug"
+                  params={{ slug: s.slug }}
+                  className="transition-colors hover:text-white"
+                >
+                  {s.label}
+                </Link>
               </li>
             ))}
           </ul>
@@ -45,29 +59,33 @@ export function Footer() {
 
         <div>
           <h3 className="text-sm font-bold uppercase tracking-wider text-white/80">Contact</h3>
-          <ul className="mt-4 space-y-3 text-sm text-white/85">
-            <li className="flex items-start gap-2.5">
-              <span className="mt-0.5 grid h-7 w-7 place-items-center rounded-full bg-brand-red"><Phone className="h-3.5 w-3.5" /></span>
+          <ul className="mt-4 space-y-4 text-sm text-white/85">
+            <li className="flex items-start gap-3">
+              <span className="shrink-0 mt-0.5 grid h-8 w-8 place-items-center rounded-full bg-brand-red"><Phone className="h-4 w-4" /></span>
               <div className="min-w-0">
                 <p className="text-[11px] uppercase tracking-wider text-white/60">Owner · Haji Majid Ali</p>
                 <a href={telHref(SITE.phonePrimary)} className="font-semibold">{SITE.phonePrimary}</a>
               </div>
             </li>
-            <li className="flex items-start gap-2.5">
-              <span className="mt-0.5 grid h-7 w-7 place-items-center rounded-full bg-[oklch(0.55_0.17_145)]"><Phone className="h-3.5 w-3.5" /></span>
+            <li className="flex items-start gap-3">
+              <span className="shrink-0 mt-0.5 grid h-8 w-8 place-items-center rounded-full bg-[oklch(0.55_0.17_145)]"><Phone className="h-4 w-4" /></span>
               <div className="min-w-0">
                 <p className="text-[11px] uppercase tracking-wider text-white/60">WhatsApp · Asmar Majid</p>
                 <a href={waHref()} className="font-semibold">{SITE.phoneSecondary}</a>
                 <p className="text-white/70">{SITE.phoneTertiary}</p>
               </div>
             </li>
-            <li className="flex items-start gap-2.5">
-              <span className="mt-0.5 grid h-7 w-7 place-items-center rounded-full bg-white/10"><Mail className="h-3.5 w-3.5" /></span>
-              <a href={`mailto:${SITE.email}`} className="break-all">{SITE.email}</a>
+            <li className="flex items-start gap-3">
+              <span className="shrink-0 mt-0.5 grid h-8 w-8 place-items-center rounded-full bg-white/10"><Mail className="h-4 w-4" /></span>
+              <div className="min-w-0">
+                <a href={`mailto:${SITE.email}`} className="break-all">{SITE.email}</a>
+              </div>
             </li>
-            <li className="flex items-start gap-2.5">
-              <span className="mt-0.5 grid h-7 w-7 place-items-center rounded-full bg-white/10"><MapPin className="h-3.5 w-3.5" /></span>
-              <span className="text-white/80">{SITE.address}</span>
+            <li className="flex items-start gap-3">
+              <span className="shrink-0 mt-0.5 grid h-8 w-8 place-items-center rounded-full bg-white/10"><MapPin className="h-4 w-4" /></span>
+              <div className="min-w-0">
+                <span className="text-white/80">{SITE.address}</span>
+              </div>
             </li>
           </ul>
         </div>

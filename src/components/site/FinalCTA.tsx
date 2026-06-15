@@ -13,7 +13,7 @@ export function FinalCTA() {
                 Planning a Move? Let MGT Handle It Safely.
               </h2>
               <p className="mt-4 max-w-xl text-white/90 sm:text-lg">
-                Trained team, professional packing and the right truck for every job — anywhere
+                Trained team, professional packing and the right truck for every job, anywhere
                 in Pakistan.
               </p>
             </div>

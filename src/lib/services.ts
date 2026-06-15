@@ -46,3 +46,80 @@ export const getService = (slug: string): Service | undefined =>
 
 export const getServiceIcon = (icon: string): string =>
   SERVICE_ICONS[icon] ?? houseShifting;
+
+const P = (name: string) => `/photos/${name}`;
+
+export const SERVICE_PHOTOS: Record<string, { heroImage: string; gallery: string[] }> = {
+  "house-shifting": {
+    heroImage: P("house-shifting-garden.jpeg"),
+    gallery: [
+      P("house-shifting-home.jpeg"),
+      P("house-delivery.jpeg"),
+      P("worker-carrying-cabinet.jpeg"),
+    ],
+  },
+  "office-relocation": {
+    heroImage: P("office-packing.jpeg"),
+    gallery: [
+      P("packing-house-full.jpeg"),
+      P("packing-bedroom.jpeg"),
+      P("loading-wardrobe-2.jpeg"),
+    ],
+  },
+  "packing": {
+    heroImage: P("packing-house-full.jpeg"),
+    gallery: [
+      P("packed-boxes.jpeg"),
+      P("packing-sofa-apt.jpeg"),
+      P("packing-sofa-room.jpeg"),
+    ],
+  },
+  "loading-unloading": {
+    heroImage: P("loading-wardrobe-1.jpeg"),
+    gallery: [
+      P("loading-wardrobe-2.jpeg"),
+      P("loading-glass-panel.jpeg"),
+      P("loading-wardrobe-3.jpeg"),
+    ],
+  },
+  "warehouse": {
+    heroImage: P("packed-boxes.jpeg"),
+    gallery: [
+      P("team-truck.jpeg"),
+      P("loading-mattress-1.jpeg"),
+      P("packing-house-full.jpeg"),
+    ],
+  },
+  "cargo": {
+    heroImage: P("cargo-loading-box.jpeg"),
+    gallery: [
+      P("team-truck.jpeg"),
+      P("loading-mattress-2.jpeg"),
+      P("truck-rear-branded.jpeg"),
+    ],
+  },
+  "goods-transport": {
+    heroImage: P("team-truck.jpeg"),
+    gallery: [
+      P("loading-mattress-1.jpeg"),
+      P("cargo-loading-box.jpeg"),
+      P("loading-wardrobe-3.jpeg"),
+    ],
+  },
+  "truck-on-rent": {
+    heroImage: P("truck-rent-parked.jpeg"),
+    gallery: [
+      P("truck-rent-highway.jpeg"),
+      P("truck-rent-white.jpeg"),
+      P("truck-rent-fleet.jpeg"),
+    ],
+  },
+  "car-carrier": {
+    heroImage: P("car-carrier-two-cars.jpeg"),
+    gallery: [
+      P("car-carrier-hero.jpeg"),
+      P("car-carrier-flatbed.jpeg"),
+      P("car-carrier-transport.jpeg"),
+    ],
+  },
+};

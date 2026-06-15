@@ -1,7 +1,7 @@
 import { ClipboardList, MapPinned, PackageCheck, Truck } from "lucide-react";
 
 const STEPS = [
-  { n: "01", icon: ClipboardList, title: "Request a Free Quote", desc: "Share your move details — we respond fast with a clear price." },
+  { n: "01", icon: ClipboardList, title: "Request a Free Quote", desc: "Share your move details. We respond fast with a clear price." },
   { n: "02", icon: MapPinned, title: "Get a Moving Plan", desc: "We schedule, assign the right truck and team for your move." },
   { n: "03", icon: PackageCheck, title: "Packing & Loading", desc: "Trained crew packs, wraps and safely loads everything." },
   { n: "04", icon: Truck, title: "Safe Delivery", desc: "On-time delivery, careful unloading and setup at the new place." },

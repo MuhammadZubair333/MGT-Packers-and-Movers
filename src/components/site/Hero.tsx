@@ -30,7 +30,7 @@ export function Hero() {
           </h1>
           <p className="mt-5 max-w-xl text-base text-muted-foreground sm:text-lg">
             Professional packing, loading, relocation, goods transport, truck rental and car
-            carrier services handled by an experienced team — from Karachi to anywhere you call
+            carrier services handled by an experienced team, from Karachi to anywhere you call
             home.
           </p>
 
@@ -114,6 +114,7 @@ export function Hero() {
           </div>
         </div>
       </div>
+
     </section>
   );
 }

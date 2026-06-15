@@ -7,9 +7,9 @@ import { FinalCTA } from "@/components/site/FinalCTA";
 import { SERVICES, getServiceIcon } from "@/lib/services";
 import { SITE, telHref, waHref } from "@/lib/site";
 
-const TITLE = "Our Services — MGT Packers & Movers Karachi & Pakistan";
+const TITLE = "Our Services | MGT Packers & Movers Karachi & Pakistan";
 const DESCRIPTION =
-  "Explore all MGT Packers & Movers services — house shifting, office relocation, packing, loading, warehouse storage, cargo, goods transport, truck on rent and car carrier across Karachi and Pakistan.";
+  "Explore all MGT Packers & Movers services: house shifting, office relocation, packing, loading, warehouse storage, cargo, goods transport, truck on rent and car carrier across Karachi and Pakistan.";
 const URL = "https://mgtpam.lovable.app/services";
 
 export const Route = createFileRoute("/services/")({
@@ -44,7 +44,7 @@ export const Route = createFileRoute("/services/")({
 function ServicesIndex() {
   return (
     <div className="min-h-screen bg-background">
-      <Header />
+      <Header darkBackground />
       <main>
         {/* Hero */}
         <section className="relative overflow-hidden bg-gradient-navy pt-32 pb-20 text-white sm:pt-40 sm:pb-28">
@@ -65,7 +65,7 @@ function ServicesIndex() {
             </h1>
             <p className="mt-5 max-w-2xl text-base text-white/80 sm:text-lg">
               Nine specialised services, one trusted team. From a single-room shift to a full
-              industrial cargo move — MGT has the people, packing and right-sized vehicle for the job.
+              industrial cargo move. MGT has the people, packing and right-sized vehicle for the job.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a
@@ -117,6 +117,66 @@ function ServicesIndex() {
                 </Link>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* Video Section */}
+        <section className="relative overflow-hidden bg-gradient-navy py-20 sm:py-28 text-white">
+          <div className="absolute inset-0 bg-gradient-mesh opacity-25" />
+          <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+            {/* Heading */}
+            <div className="mx-auto max-w-3xl text-center">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-red">
+                See Us In Action
+              </p>
+              <h2 className="mt-3 text-3xl font-extrabold sm:text-4xl lg:text-5xl">
+                Watch Our Team Work
+              </h2>
+              <p className="mt-4 text-base text-white/75 sm:text-lg">
+                5,000+ successful moves across Pakistan. One trusted, trained team handling
+                everything from packing to door-step delivery, with care every step of the way.
+              </p>
+            </div>
+
+            {/* Video card */}
+            <div className="relative mx-auto mt-12 max-w-4xl">
+              <div className="absolute -inset-6 rounded-[2.5rem] bg-brand-red opacity-20 blur-3xl" />
+              <div className="relative overflow-hidden rounded-[2rem] shadow-2xl ring-1 ring-white/10">
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="aspect-video w-full object-cover"
+                  aria-label="MGT Packers and Movers team working"
+                >
+                  <source src="/mgt-service.mp4" type="video/mp4" />
+                </video>
+                {/* Bottom gradient + label */}
+                <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-black/60 to-transparent" />
+                <div className="absolute bottom-4 left-4 flex items-center gap-2 rounded-xl bg-white/10 px-3 py-1.5 backdrop-blur-sm">
+                  <span className="h-2 w-2 animate-pulse rounded-full bg-brand-red" />
+                  <p className="text-xs font-semibold text-white">MGT Packers &amp; Movers · Live Team</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Stats row */}
+            <div className="mx-auto mt-12 grid max-w-3xl grid-cols-2 gap-6 sm:grid-cols-4">
+              {[
+                ["5,000+", "Moves Done"],
+                ["15+",    "Years Active"],
+                ["20+",    "Cities Covered"],
+                ["100%",   "Safe Delivery"],
+              ].map(([n, l]) => (
+                <div key={l} className="text-center">
+                  <p className="text-3xl font-extrabold text-white sm:text-4xl">{n}</p>
+                  <p className="mt-1 text-xs font-medium uppercase tracking-wider text-white/55">{l}</p>
+                </div>
+              ))}
+            </div>
+
           </div>
         </section>
 

@@ -145,3 +145,58 @@
   to { transform: translateX(-50%); }
 }
 @utility animate-marquee { animation: marquee 30s linear infinite; }
+
+/* ── TruckScene animations ──────────────────────────────────────── */
+@keyframes _scene-far  { to { transform: translateX(-50%); } }
+@keyframes _scene-near { to { transform: translateX(-50%); } }
+@keyframes _scene-dash { to { stroke-dashoffset: -116; } }
+@keyframes _scene-star {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.15; }
+}
+@keyframes _scene-lamp {
+  0%, 88%, 100% { opacity: 1; }
+  90%, 96%      { opacity: 0.05; }
+}
+@keyframes _scene-beam {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.5; }
+}
+@keyframes _scene-puff {
+  from { transform: translate(0, 0) scale(1);       opacity: 0.65; }
+  to   { transform: translate(8px, -28px) scale(2); opacity: 0;    }
+}
+@keyframes _truck-bob {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-4px); }
+}
+@keyframes _truck-enter {
+  from { transform: translateX(60px); opacity: 0; }
+  to   { transform: translateX(0);    opacity: 1; }
+}
+@keyframes _wheel-spin { to { transform: rotate(360deg); } }
+
+.scene-far {
+  transform-box: fill-box;
+  animation: _scene-far 60s linear infinite;
+}
+.scene-near {
+  transform-box: fill-box;
+  animation: _scene-near 28s linear infinite;
+}
+.scene-dash  { animation: _scene-dash  0.9s linear infinite; }
+.scene-star  { animation: _scene-star  2.5s ease-in-out infinite; }
+.scene-lamp  { animation: _scene-lamp  6s ease-in-out infinite; }
+.scene-beam  { animation: _scene-beam  2s ease-in-out infinite; }
+.scene-puff {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: _scene-puff 2.2s ease-out infinite;
+}
+.truck-bob   { animation: _truck-bob   0.55s ease-in-out infinite; }
+.truck-enter { animation: _truck-enter 1.6s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.wheel-spin {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: _wheel-spin 0.9s linear infinite;
+}

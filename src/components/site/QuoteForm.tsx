@@ -36,7 +36,7 @@ export function QuoteForm() {
             Get a Free Quote
           </p>
           <h2 className="mt-3 text-3xl font-extrabold sm:text-4xl lg:text-5xl">
-            Tell us about your move — get a price in minutes.
+            Tell us about your move. Get a price in minutes.
           </h2>
           <p className="mt-5 text-white/80 lg:text-lg">
             Share a few details and our team will reply with a transparent quote. No hidden
@@ -45,7 +45,7 @@ export function QuoteForm() {
           <ul className="mt-6 space-y-3 text-sm text-white/85">
             {[
               "Free survey for large moves",
-              "Trained, in-house team — not random labour",
+              "Trained in-house team, not random labour",
               "Premium packing materials included",
               "Available 7 days a week",
             ].map((t) => (
