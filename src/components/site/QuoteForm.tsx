@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from "react";
-import { CheckCircle2, Loader2, Send } from "lucide-react";
+import { CheckCircle2, Loader2, Send, AlertCircle } from "lucide-react";
 import { SITE } from "@/lib/site";
+import { sendQuoteRequest } from "@/lib/api/quote.functions";
 
 const MOVE_TYPES = [
   "House Shifting",
@@ -14,16 +15,31 @@ const MOVE_TYPES = [
 ];
 
 export function QuoteForm() {
-  const [status, setStatus] = useState<"idle" | "sending" | "ok">("idle");
+  const [status, setStatus] = useState<"idle" | "sending" | "ok" | "error">("idle");
 
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setStatus("sending");
-    // Resend-ready: wire this to a server function later.
-    await new Promise((r) => setTimeout(r, 900));
-    setStatus("ok");
-    (e.target as HTMLFormElement).reset();
-    setTimeout(() => setStatus("idle"), 3500);
+    const fd = new FormData(e.currentTarget);
+    try {
+      await sendQuoteRequest({
+        data: {
+          name:    fd.get("name") as string,
+          phone:   fd.get("phone") as string,
+          from:    fd.get("from") as string,
+          to:      fd.get("to") as string,
+          date:    (fd.get("date") as string) || undefined,
+          type:    (fd.get("type") as string) || undefined,
+          message: (fd.get("message") as string) || undefined,
+        },
+      });
+      setStatus("ok");
+      (e.target as HTMLFormElement).reset();
+      setTimeout(() => setStatus("idle"), 4000);
+    } catch {
+      setStatus("error");
+      setTimeout(() => setStatus("idle"), 4000);
+    }
   }
 
   return (
@@ -114,6 +130,8 @@ export function QuoteForm() {
               <><Loader2 className="h-4 w-4 animate-spin" /> Sending…</>
             ) : status === "ok" ? (
               <><CheckCircle2 className="h-4 w-4" /> Request Received</>
+            ) : status === "error" ? (
+              <><AlertCircle className="h-4 w-4" /> Failed — Try WhatsApp</>
             ) : (
               <>Submit Request <Send className="h-4 w-4" /></>
             )}
