@@ -1,5 +1,9 @@
 const CLIENTS: { name: string; logo: string }[] = [
   {
+    name: "VIZ Six Sigma Plus",
+    logo: "/photos/viz-six-sigma-plus.png",
+  },
+  {
     name: "Naushad Imdad",
     logo: "https://naushadimdad.pk/cdn/shop/files/logoN_160x.png?v=1690391675",
   },
