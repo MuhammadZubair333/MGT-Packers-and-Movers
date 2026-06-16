@@ -12,7 +12,7 @@ const NAV: NavItem[] = [
   { label: "Why Us", href: "/#why" },
   { label: "About", href: "/#about" },
   { label: "Gallery", href: "/#gallery" },
-  { label: "Contact", href: "/#contact" },
+  { label: "Contact", href: "/#quote" },
 ];
 
 export function Header({ darkBackground = false }: { darkBackground?: boolean }) {
