@@ -1,7 +1,11 @@
 import { useState, type FormEvent } from "react";
 import { CheckCircle2, Loader2, Send, AlertCircle } from "lucide-react";
+import emailjs from "@emailjs/browser";
 import { SITE } from "@/lib/site";
-import { sendQuoteRequest } from "@/lib/api/quote.functions";
+
+const EMAILJS_SERVICE  = "service_jlpk5rq";
+const EMAILJS_TEMPLATE = "template_2lp7b6w";
+const EMAILJS_KEY      = "ecBRUcCqPTEdc3wMh";
 
 const MOVE_TYPES = [
   "House Shifting",
@@ -22,17 +26,20 @@ export function QuoteForm() {
     setStatus("sending");
     const fd = new FormData(e.currentTarget);
     try {
-      await sendQuoteRequest({
-        data: {
-          name:    fd.get("name") as string,
-          phone:   fd.get("phone") as string,
-          from:    fd.get("from") as string,
-          to:      fd.get("to") as string,
-          date:    (fd.get("date") as string) || undefined,
-          type:    (fd.get("type") as string) || undefined,
-          message: (fd.get("message") as string) || undefined,
+      await emailjs.send(
+        EMAILJS_SERVICE,
+        EMAILJS_TEMPLATE,
+        {
+          from_name:    fd.get("name"),
+          phone:        fd.get("phone"),
+          from_city:    fd.get("from"),
+          to_city:      fd.get("to"),
+          move_date:    fd.get("date") || "Not specified",
+          service_type: fd.get("type") || "Not specified",
+          message:      fd.get("message") || "No message",
         },
-      });
+        { publicKey: EMAILJS_KEY }
+      );
       setStatus("ok");
       (e.target as HTMLFormElement).reset();
       setTimeout(() => setStatus("idle"), 4000);
