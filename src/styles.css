@@ -200,3 +200,23 @@
   transform-origin: center;
   animation: _wheel-spin 0.9s linear infinite;
 }
+
+/* Spinning rainbow border for CTA buttons */
+@property --rr-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+@keyframes _rainbow-spin {
+  to { --rr-angle: 360deg; }
+}
+.rainbow-ring {
+  background: conic-gradient(
+    from var(--rr-angle),
+    #ff3b3b, #ff8c00, #ffe600, #00d26a, #0099ff, #b44fff, #ff3b3b
+  );
+  animation: _rainbow-spin 2s linear infinite;
+  border-radius: 9999px;
+  padding: 2.5px;
+  display: inline-flex;
+}
