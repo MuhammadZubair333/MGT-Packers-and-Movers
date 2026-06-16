@@ -11,9 +11,9 @@ export const SITE = {
   address:
     "Plot # D-425, Sec 31-E, Lucknow Co-operative Housing Society, UMDC Road, Korangi, Karachi",
   social: {
-    facebook: "https://facebook.com",
-    instagram: "https://instagram.com",
-    tiktok: "https://tiktok.com",
+    facebook: "https://www.facebook.com/p/MGT-Packers-Movers-61559485697477/",
+    instagram: "https://www.instagram.com/mgtpackersmovers/",
+    tiktok: "https://www.tiktok.com/@mgt.packers.movers",
   },
 };
 
