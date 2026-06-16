@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { MessageCircle, X, Send, Loader2, Bot, Sparkles } from "lucide-react";
+import { MessageCircle, X, Send, Loader2, Bot } from "lucide-react";
 import { sendChatMessage } from "@/lib/api/chat.functions";
 
 type Message = {
@@ -23,7 +23,6 @@ export function ChatWidget() {
   const [showPopup, setShowPopup] = useState(false);
   const bottomRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
-  const popupTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -35,17 +34,9 @@ export function ChatWidget() {
 
   useEffect(() => {
     if (sessionStorage.getItem(POPUP_KEY)) return;
-    const show = setTimeout(() => setShowPopup(true), 2500);
-    return () => clearTimeout(show);
+    const t = setTimeout(() => setShowPopup(true), 2000);
+    return () => clearTimeout(t);
   }, []);
-
-  useEffect(() => {
-    if (!showPopup) return;
-    popupTimerRef.current = setTimeout(() => dismissPopup(), 8000);
-    return () => {
-      if (popupTimerRef.current) clearTimeout(popupTimerRef.current);
-    };
-  }, [showPopup]);
 
   function dismissPopup() {
     setShowPopup(false);
@@ -185,41 +176,25 @@ export function ChatWidget() {
 
       {/* Popup bubble */}
       {showPopup && !open && (
-        <div className="mb-3 animate-[popupIn_0.4s_cubic-bezier(0.34,1.56,0.64,1)_both]">
-          <div className="relative flex max-w-[260px] items-start gap-3 rounded-2xl rounded-br-sm border border-border bg-white p-4 shadow-2xl">
-            {/* Close */}
-            <button
-              onClick={dismissPopup}
-              className="absolute right-2 top-2 grid h-5 w-5 place-items-center rounded-full text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
-              aria-label="Dismiss"
-            >
-              <X className="h-3 w-3" />
-            </button>
-
-            {/* Bot avatar */}
-            <div className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-gradient-navy shadow-glow-navy">
-              <Bot className="h-4 w-4 text-white" />
-            </div>
-
-            {/* Text */}
-            <div className="pr-4">
-              <div className="flex items-center gap-1.5">
-                <p className="text-xs font-bold text-navy-deep">MGT Assistant</p>
-                <Sparkles className="h-3 w-3 text-brand-red" />
-              </div>
-              <p className="mt-1 text-sm leading-snug text-foreground">
-                👋 Need help with your move? I can answer all your questions instantly!
-              </p>
-              <button
-                onClick={openChat}
-                className="mt-2.5 rounded-full bg-gradient-red px-3.5 py-1.5 text-xs font-semibold text-white shadow-glow-red transition-transform hover:scale-105"
-              >
-                Chat with us
-              </button>
-            </div>
-          </div>
-          {/* Arrow pointing to button */}
-          <div className="ml-auto mr-4 h-0 w-0 border-l-[8px] border-r-[8px] border-t-[8px] border-l-transparent border-r-transparent border-t-white drop-shadow-sm" />
+        <div className="mb-2 flex flex-col items-end animate-[popupIn_0.35s_cubic-bezier(0.34,1.56,0.64,1)_both]">
+          {/* Bubble */}
+          <button
+            onClick={openChat}
+            className="flex items-center gap-2 rounded-full bg-navy-deep py-2.5 pl-3.5 pr-10 text-sm font-medium text-white shadow-glow-navy transition-transform hover:scale-[1.03]"
+          >
+            <span className="text-base leading-none">👋</span>
+            <span>Hi! I&apos;m your assistant</span>
+          </button>
+          {/* X to dismiss */}
+          <button
+            onClick={(e) => { e.stopPropagation(); dismissPopup(); }}
+            className="absolute bottom-[4.5rem] right-0 grid h-5 w-5 place-items-center rounded-full bg-white text-navy-deep shadow-md transition-colors hover:bg-accent"
+            aria-label="Dismiss"
+          >
+            <X className="h-3 w-3" />
+          </button>
+          {/* Small arrow */}
+          <div className="mr-5 h-0 w-0 border-l-[6px] border-r-[6px] border-t-[6px] border-l-transparent border-r-transparent border-t-navy-deep" />
         </div>
       )}
 
