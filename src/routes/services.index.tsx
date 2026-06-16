@@ -4,6 +4,7 @@ import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { FloatingActions } from "@/components/site/FloatingActions";
 import { FinalCTA } from "@/components/site/FinalCTA";
+import { QuoteForm } from "@/components/site/QuoteForm";
 import { SERVICES, getServiceIcon } from "@/lib/services";
 import { SITE, telHref, waHref } from "@/lib/site";
 
@@ -180,6 +181,7 @@ function ServicesIndex() {
           </div>
         </section>
 
+        <QuoteForm />
         <FinalCTA />
       </main>
       <Footer />

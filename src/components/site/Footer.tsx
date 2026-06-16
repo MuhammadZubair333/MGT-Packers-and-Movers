@@ -63,14 +63,14 @@ export function Footer() {
             <li className="flex items-start gap-3">
               <span className="shrink-0 mt-0.5 grid h-8 w-8 place-items-center rounded-full bg-brand-red"><Phone className="h-4 w-4" /></span>
               <div className="min-w-0">
-                <p className="text-[11px] uppercase tracking-wider text-white/60">Owner · Haji Majid Ali</p>
+                <p className="text-[11px] uppercase tracking-wider text-white/60">Phone</p>
                 <a href={telHref(SITE.phonePrimary)} className="font-semibold">{SITE.phonePrimary}</a>
               </div>
             </li>
             <li className="flex items-start gap-3">
               <span className="shrink-0 mt-0.5 grid h-8 w-8 place-items-center rounded-full bg-[oklch(0.55_0.17_145)]"><Phone className="h-4 w-4" /></span>
               <div className="min-w-0">
-                <p className="text-[11px] uppercase tracking-wider text-white/60">WhatsApp · Asmar Majid</p>
+                <p className="text-[11px] uppercase tracking-wider text-white/60">WhatsApp</p>
                 <a href={waHref()} className="font-semibold">{SITE.phoneSecondary}</a>
                 <p className="text-white/70">{SITE.phoneTertiary}</p>
               </div>
