@@ -64,7 +64,7 @@ export function Footer() {
               <span className="shrink-0 mt-0.5 grid h-8 w-8 place-items-center rounded-full bg-brand-red"><Phone className="h-4 w-4" /></span>
               <div className="min-w-0">
                 <p className="text-[11px] uppercase tracking-wider text-white/60">Phone</p>
-                <a href={telHref(SITE.phonePrimary)} className="font-semibold">{SITE.phonePrimary}</a>
+                <a href={telHref(SITE.phoneCall)} className="font-semibold">{SITE.phoneCall}</a>
               </div>
             </li>
             <li className="flex items-start gap-3">

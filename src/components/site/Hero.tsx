@@ -45,10 +45,10 @@ export function Hero() {
               </a>
             </span>
             <a
-              href={telHref(SITE.phonePrimary)}
+              href={telHref(SITE.phoneCall)}
               className="inline-flex items-center gap-2 rounded-full border border-border bg-white px-6 py-3.5 text-sm font-semibold text-navy shadow-soft transition-colors hover:bg-accent"
             >
-              <Phone className="h-4 w-4" /> Call {SITE.phonePrimary}
+              <Phone className="h-4 w-4" /> Call {SITE.phoneCall}
             </a>
           </div>
 

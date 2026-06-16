@@ -81,10 +81,10 @@ export function QuoteForm() {
           <div className="mt-8 rounded-2xl border border-white/10 bg-white/5 p-5 text-sm backdrop-blur">
             <p className="font-semibold">Prefer to talk?</p>
             <p className="mt-1 text-white/75">
-              Call <a href={`tel:+92${SITE.phonePrimary.replace(/[^0-9]/g, "").replace(/^0/, "")}`} className="font-semibold text-white">{SITE.phonePrimary}</a>{" "}
+              Call <a href={`tel:+92${SITE.phoneCall.replace(/[^0-9]/g, "").replace(/^0/, "")}`} className="font-semibold text-white">{SITE.phoneCall}</a>{" "}
               or WhatsApp{" "}
               <a href={`https://wa.me/${SITE.whatsapp}`} className="font-semibold text-white">
-                {SITE.phoneSecondary}
+                {SITE.phoneWhatsapp}
               </a>
             </p>
           </div>

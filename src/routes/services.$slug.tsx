@@ -137,10 +137,10 @@ function ServiceDetailPage() {
                     Get Free Quote on WhatsApp
                   </a>
                   <a
-                    href={telHref(SITE.phonePrimary)}
+                    href={telHref(SITE.phoneCall)}
                     className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-white backdrop-blur"
                   >
-                    <Phone className="h-4 w-4" /> {SITE.phonePrimary}
+                    <Phone className="h-4 w-4" /> {SITE.phoneCall}
                   </a>
                 </div>
               </div>

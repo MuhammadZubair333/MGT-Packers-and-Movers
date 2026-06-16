@@ -33,7 +33,7 @@ export function FinalCTA() {
                 WhatsApp Now
               </a>
               <a
-                href={telHref(SITE.phonePrimary)}
+                href={telHref(SITE.phoneCall)}
                 className="inline-flex items-center justify-center gap-2 rounded-full border border-white/40 bg-white/10 px-6 py-3.5 text-sm font-semibold text-white backdrop-blur transition-colors hover:bg-white/20"
               >
                 <Phone className="h-4 w-4" /> Call Now

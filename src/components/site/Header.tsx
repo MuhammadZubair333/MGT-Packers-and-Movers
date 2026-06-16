@@ -56,10 +56,10 @@ export function Header({ darkBackground = false }: { darkBackground?: boolean })
 
         <div className="flex items-center gap-2">
           <a
-            href={telHref(SITE.phonePrimary)}
+            href={telHref(SITE.phoneCall)}
             className="hidden items-center gap-2 rounded-full bg-gradient-red px-4 py-2 text-sm font-semibold text-white shadow-glow-red transition-transform hover:-translate-y-0.5 sm:inline-flex"
           >
-            <Phone className="h-4 w-4" /> {SITE.phonePrimary}
+            <Phone className="h-4 w-4" /> {SITE.phoneCall}
           </a>
           <span className="btn-ring btn-ring-green hidden sm:inline-flex">
             <a
@@ -134,10 +134,10 @@ export function Header({ darkBackground = false }: { darkBackground?: boolean })
           </nav>
           <div className="space-y-2 border-t border-border p-4">
             <a
-              href={telHref(SITE.phonePrimary)}
+              href={telHref(SITE.phoneCall)}
               className="flex items-center justify-center gap-2 rounded-full bg-gradient-red py-3 text-sm font-semibold text-white shadow-glow-red"
             >
-              <Phone className="h-4 w-4" /> Call {SITE.phonePrimary}
+              <Phone className="h-4 w-4" /> Call {SITE.phoneCall}
             </a>
             <a
               href={waHref()}
