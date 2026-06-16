@@ -6,7 +6,6 @@ const CLIENTS: { name: string; logo: string; bg?: string }[] = [
   {
     name: "World Group Trunkwala's",
     logo: "/photos/logo-trunkwala.png",
-    bg: "bg-[#8B6914]",
   },
   {
     name: "Naushad Imdad",
