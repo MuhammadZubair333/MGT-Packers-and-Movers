@@ -61,7 +61,7 @@ export function Header({ darkBackground = false }: { darkBackground?: boolean })
           >
             <Phone className="h-4 w-4" /> {SITE.phonePrimary}
           </a>
-          <span className="rainbow-ring hidden sm:inline-flex">
+          <span className="btn-ring btn-ring-green hidden sm:inline-flex">
             <a
               href={waHref()}
               target="_blank"

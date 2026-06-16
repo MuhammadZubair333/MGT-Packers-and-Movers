@@ -201,22 +201,58 @@
   animation: _wheel-spin 0.9s linear infinite;
 }
 
-/* Spinning rainbow border for CTA buttons */
-@property --rr-angle {
-  syntax: '<angle>';
-  initial-value: 0deg;
-  inherits: false;
-}
-@keyframes _rainbow-spin {
-  to { --rr-angle: 360deg; }
-}
-.rainbow-ring {
-  background: conic-gradient(
-    from var(--rr-angle),
-    #ff3b3b, #ff8c00, #ffe600, #00d26a, #0099ff, #b44fff, #ff3b3b
-  );
-  animation: _rainbow-spin 2s linear infinite;
-  border-radius: 9999px;
-  padding: 2.5px;
+/* ── Eye-catching CTA button effects ── */
+
+/* Pulsing expanding ring */
+.btn-ring {
+  position: relative;
   display: inline-flex;
+  border-radius: 9999px;
+}
+.btn-ring::before,
+.btn-ring::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 9999px;
+  border: 2px solid currentColor;
+  pointer-events: none;
+  animation: _ring-pulse 2s ease-out infinite;
+}
+.btn-ring::after {
+  animation-delay: 1s;
+}
+.btn-ring-red  { color: #e8444b; }
+.btn-ring-green { color: #25d366; }
+
+@keyframes _ring-pulse {
+  0%   { transform: scale(1);    opacity: 0.9; }
+  70%  { transform: scale(1.18); opacity: 0; }
+  100% { transform: scale(1.18); opacity: 0; }
+}
+
+/* Shimmer sweep across button */
+.btn-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+.btn-shimmer::before {
+  content: '';
+  position: absolute;
+  top: 0; bottom: 0;
+  left: -100%;
+  width: 55%;
+  background: linear-gradient(
+    105deg,
+    transparent 35%,
+    rgba(255,255,255,0.38) 50%,
+    transparent 65%
+  );
+  animation: _shimmer-sweep 3s ease-in-out infinite;
+  pointer-events: none;
+}
+@keyframes _shimmer-sweep {
+  0%   { left: -100%; }
+  55%  { left: 150%; }
+  100% { left: 150%; }
 }

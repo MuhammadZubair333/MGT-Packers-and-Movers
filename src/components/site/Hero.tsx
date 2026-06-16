@@ -35,10 +35,10 @@ export function Hero() {
           </p>
 
           <div className="mt-7 flex flex-wrap items-center gap-3">
-            <span className="rainbow-ring">
+            <span className="btn-ring btn-ring-red">
               <a
                 href="#quote"
-                className="group inline-flex items-center gap-2 rounded-full bg-gradient-red px-6 py-3.5 text-sm font-semibold text-white transition-transform hover:-translate-y-0.5"
+                className="btn-shimmer group inline-flex items-center gap-2 rounded-full bg-gradient-red px-6 py-3.5 text-sm font-semibold text-white shadow-glow-red transition-transform hover:-translate-y-0.5"
               >
                 Get a Free Quote
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
