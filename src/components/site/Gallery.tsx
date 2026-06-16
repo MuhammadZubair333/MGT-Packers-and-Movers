@@ -1,13 +1,8 @@
-import wrapping from "@/assets/gallery/wrapping.jpg";
-import loading from "@/assets/gallery/loading.jpg";
-import office from "@/assets/gallery/office.jpg";
-import warehouse from "@/assets/gallery/warehouse.jpg";
-
 const ITEMS = [
-  { img: loading, label: "Loading & Transport" },
-  { img: wrapping, label: "Furniture Wrapping" },
-  { img: office, label: "Office Relocation" },
-  { img: warehouse, label: "Warehouse Storage" },
+  { img: "/photos/mgt-loading-furniture.jpeg", label: "Loading & Transport" },
+  { img: "/photos/mgt-wrapping-sofa.jpeg", label: "Furniture Wrapping" },
+  { img: "/photos/mgt-packing-house.jpeg", label: "Professional Packing" },
+  { img: "/photos/mgt-packed-boxes.jpeg", label: "Ready for Delivery" },
 ];
 
 export function Gallery() {

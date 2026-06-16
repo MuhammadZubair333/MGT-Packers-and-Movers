@@ -17,7 +17,7 @@ const ITEMS = [
   { icon: Wallet, title: "Affordable Pricing", desc: "Transparent quotes, no hidden charges." },
   { icon: DoorOpen, title: "Door-to-Door Service", desc: "Pickup, transport and setup at the new place." },
   { icon: PackageCheck, title: "Professional Packing", desc: "Premium materials for fragile, electronics & more." },
-  { icon: MapPinned, title: "Nationwide Transport", desc: "Karachi, Lahore, Islamabad and across Pakistan." },
+  { icon: MapPinned, title: "Nationwide Transport", desc: "Karachi, Lahore, Islamabad, Multan, Faisalabad and across Pakistan." },
   { icon: HeartHandshake, title: "Customer-Focused", desc: "Friendly support before, during and after the move." },
 ];
 

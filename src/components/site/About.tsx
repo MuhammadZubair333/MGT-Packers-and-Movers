@@ -1,5 +1,4 @@
 import { Quote } from "lucide-react";
-import img from "@/assets/gallery/wrapping.jpg";
 
 export function About() {
   return (
@@ -9,8 +8,8 @@ export function About() {
           <div className="absolute -inset-4 -z-10 rounded-[2rem] bg-gradient-red opacity-10 blur-2xl" />
           <div className="overflow-hidden rounded-[2rem] border border-border shadow-card">
             <img
-              src={img}
-              alt="MGT movers carefully wrapping furniture during a house shift"
+              src="/photos/mgt-team-truck.jpeg"
+              alt="MGT Packers & Movers team ready for a move"
               width={800}
               height={800}
               loading="lazy"

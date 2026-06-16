@@ -6,7 +6,7 @@ import packing from "@/assets/services/packing.png";
 import loading from "@/assets/services/loading.png";
 import warehouse from "@/assets/services/warehouse.png";
 import cargo from "@/assets/services/cargo.png";
-import goods from "@/assets/services/goods-transport.png";
+import goods from "@/assets/services/goods-transport-fleet.jpeg";
 import truckRent from "@/assets/services/truck-rent.png";
 import carCarrier from "@/assets/services/car-carrier.png";
 
