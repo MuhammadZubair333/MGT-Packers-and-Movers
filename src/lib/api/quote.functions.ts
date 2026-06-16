@@ -19,7 +19,7 @@ export const sendQuoteRequest = createServerFn({ method: "POST" })
 
     await resend.emails.send({
       from:    "MGT Website <onboarding@resend.dev>",
-      to:      ["mgtpackersmovers@gmail.com"],
+      to:      ["ameenhamza222@gmail.com"],
       replyTo: data.phone ? undefined : undefined,
       subject: `New Quote Request: ${data.type || "General"} - ${data.name}`,
       html: `
