@@ -2,7 +2,7 @@ export const SITE = {
   name: "MGT Packers & Movers",
   legal: "Majid Goods Transport Company",
   owner: "Haji Majid Ali",
-  phoneCall: "0345-1997531",
+  phoneCall: "0300-1899303",
   phoneWhatsapp: "0300-1899303",
   whatsapp: "923001899303",
   email: "mgtpackersmovers@gmail.com",

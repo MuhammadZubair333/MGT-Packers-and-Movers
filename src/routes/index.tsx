@@ -47,7 +47,7 @@ export const Route = createFileRoute("/")({
           "@type": "MovingCompany",
           name: "MGT Packers & Movers",
           alternateName: "Majid Goods Transport Company",
-          telephone: "+92-300-1699303",
+          telephone: "+92-300-1899303",
           email: "mgtpackersmovers@gmail.com",
           url: "https://www.mgtpackersmovers.com",
           address: {

@@ -6,7 +6,7 @@ const SYSTEM_PROMPT = `You are the virtual assistant for MGT Packers & Movers (a
 
 COMPANY INFO:
 - Owner: Haji Majid Ali
-- Phone: 0345-1997531 (call), 0300-1899303 (WhatsApp)
+- Phone: 0300-1899303 (call & WhatsApp)
 - WhatsApp: 0300-1899303
 - Email: mgtpackersmovers@gmail.com
 - Address: Plot D-425, Sec 31-E, Lucknow Co-operative Housing Society, UMDC Road, Korangi, Karachi

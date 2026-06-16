@@ -71,8 +71,7 @@ export function Footer() {
               <span className="shrink-0 mt-0.5 grid h-8 w-8 place-items-center rounded-full bg-[oklch(0.55_0.17_145)]"><Phone className="h-4 w-4" /></span>
               <div className="min-w-0">
                 <p className="text-[11px] uppercase tracking-wider text-white/60">WhatsApp</p>
-                <a href={waHref()} className="font-semibold">{SITE.phoneSecondary}</a>
-                <p className="text-white/70">{SITE.phoneTertiary}</p>
+                <a href={waHref()} className="font-semibold">{SITE.phoneWhatsapp}</a>
               </div>
             </li>
             <li className="flex items-start gap-3">

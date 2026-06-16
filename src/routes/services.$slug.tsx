@@ -42,7 +42,7 @@ export const Route = createFileRoute("/services/$slug")({
             provider: {
               "@type": "MovingCompany",
               name: "MGT Packers & Movers",
-              telephone: "+92-300-1699303",
+              telephone: "+92-300-1899303",
               areaServed: "Pakistan",
             },
             areaServed: "Pakistan",
