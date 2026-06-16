@@ -3,21 +3,17 @@ import shahzore from "@/assets/fleet/shahzore.png";
 import mazdaOpen from "@/assets/fleet/mazda-open.png";
 import mazdaC from "@/assets/fleet/mazda-container.png";
 import t17 from "@/assets/fleet/truck-17.png";
-import t20 from "@/assets/fleet/truck-20.png";
-import t24 from "@/assets/fleet/truck-24.png";
 import t32 from "@/assets/fleet/truck-32.png";
-import t40 from "@/assets/fleet/truck-40.png";
+import flatbed from "@/assets/fleet/flatbed.jpeg";
 
 const FLEET = [
   { name: "Suzuki Pickup", desc: "Ideal for small moves & deliveries", img: suzuki },
   { name: "Shahzore", desc: "Perfect for 1 BHK city shifts", img: shahzore },
   { name: "Mazda Open Truck", desc: "Flexible flatbed for large items", img: mazdaOpen },
-  { name: "Mazda Container", desc: "Enclosed and weather-protected", img: mazdaC },
-  { name: "17 Feet Truck", desc: "Medium homes & office moves", img: t17 },
-  { name: "20 Feet Truck", desc: "Large household relocations", img: t20 },
-  { name: "24 Feet Container", desc: "Long-distance protected cargo", img: t24 },
-  { name: "32 Feet Container", desc: "Heavy commercial loads", img: t32 },
-  { name: "40 Feet Open Trailer", desc: "Oversized industrial transport", img: t40 },
+  { name: "17 Feet Container", desc: "", img: mazdaC },
+  { name: "20 Feet Container", desc: "", img: t17 },
+  { name: "40 Feet Container", desc: "", img: t32 },
+  { name: "40 Feet Flatbed", desc: "", img: flatbed },
 ];
 
 export function Fleet() {
