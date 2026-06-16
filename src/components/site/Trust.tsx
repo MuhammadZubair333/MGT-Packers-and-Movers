@@ -1,7 +1,12 @@
-const CLIENTS: { name: string; logo: string }[] = [
+const CLIENTS: { name: string; logo: string; bg?: string }[] = [
   {
-    name: "VIZ Six Sigma Plus",
-    logo: "/photos/viz-six-sigma-plus.png",
+    name: "Six Sigma Plus",
+    logo: "/photos/logo-sixsigma.png",
+  },
+  {
+    name: "World Group Trunkwala's",
+    logo: "/photos/logo-trunkwala.png",
+    bg: "bg-[#8B6914]",
   },
   {
     name: "Naushad Imdad",
@@ -40,7 +45,7 @@ export function Trust() {
               <div
                 key={i}
                 data-trust-card
-                className="flex h-20 min-w-[180px] flex-col items-center justify-center gap-2 rounded-2xl border border-border bg-white px-6 shadow-soft transition-shadow hover:shadow-card sm:min-w-[210px]"
+                className={`flex h-20 min-w-[180px] flex-col items-center justify-center gap-2 rounded-2xl border border-border px-6 shadow-soft transition-shadow hover:shadow-card sm:min-w-[210px] ${c.bg ?? "bg-white"}`}
               >
                 <img
                   src={c.logo}
