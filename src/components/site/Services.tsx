@@ -41,32 +41,34 @@ export function Services() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {SERVICES.map((s) => (
+        <div className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-3 xl:grid-cols-5">
+          {SERVICES.map((s, i) => (
             <article
               key={s.slug}
-              className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card p-6 shadow-soft transition-all hover:-translate-y-1 hover:shadow-card"
+              className={`group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card p-4 shadow-soft transition-all hover:-translate-y-1 hover:shadow-card xl:p-5${
+                i === SERVICES.length - 1 ? " md:col-start-2 xl:col-start-auto" : ""
+              }`}
             >
               <div className="absolute inset-x-0 top-0 h-1 bg-gradient-red opacity-0 transition-opacity group-hover:opacity-100" />
-              <div className="grid h-28 w-28 place-items-center rounded-2xl bg-gradient-to-br from-accent to-white">
+              <div className="grid h-20 w-20 place-items-center rounded-xl bg-gradient-to-br from-accent to-white xl:h-24 xl:w-24">
                 <img
                   src={s.img}
                   alt={`${s.title} icon`}
-                  width={112}
-                  height={112}
+                  width={96}
+                  height={96}
                   loading="lazy"
-                  className="h-24 w-24 object-contain transition-transform duration-500 group-hover:scale-110"
+                  className="h-16 w-16 object-contain transition-transform duration-500 group-hover:scale-110 xl:h-20 xl:w-20"
                 />
               </div>
-              <h3 className="mt-5 text-lg font-bold text-navy-deep">{s.title}</h3>
-              <p className="mt-2 flex-1 text-sm text-muted-foreground">{s.desc}</p>
+              <h3 className="mt-3 text-sm font-bold text-navy-deep xl:mt-4 xl:text-base">{s.title}</h3>
+              <p className="mt-1.5 flex-1 text-xs text-muted-foreground leading-relaxed xl:text-sm">{s.desc}</p>
               <Link
                 to="/services/$slug"
                 params={{ slug: s.slug }}
-                className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-red"
+                className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-brand-red xl:mt-4 xl:text-sm"
               >
-                Explore Service
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                Explore
+                <ArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-1 xl:h-4 xl:w-4" />
               </Link>
             </article>
           ))}
