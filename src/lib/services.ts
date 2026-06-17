@@ -125,11 +125,11 @@ export const SERVICE_PHOTOS: Record<string, { heroImage: string; gallery: string
     ],
   },
   "international-shipment": {
-    heroImage: P("mgt-team-truck.jpeg"),
+    heroImage: P("intl-cargo-plane.jpeg"),
     gallery: [
-      P("mgt-loading-furniture.jpeg"),
-      P("cargo-loading-box.jpeg"),
-      P("mgt-packed-boxes.jpeg"),
+      P("intl-air-freight.jpeg"),
+      P("intl-shipping-containers.jpeg"),
+      P("intl-container-ship.jpeg"),
     ],
   },
 };
