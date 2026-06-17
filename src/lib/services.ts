@@ -8,6 +8,7 @@ import cargo from "@/assets/services/cargo.png";
 import goods from "@/assets/services/goods-transport-icon.png";
 import truckRent from "@/assets/services/truck-rent.png";
 import carCarrier from "@/assets/services/car-carrier.png";
+import international from "@/assets/services/international-shipment.png";
 
 export const SERVICE_ICONS: Record<string, string> = {
   "house-shifting": houseShifting,
@@ -19,6 +20,7 @@ export const SERVICE_ICONS: Record<string, string> = {
   "goods-transport": goods,
   "truck-rent": truckRent,
   "car-carrier": carCarrier,
+  "international-shipment": international,
 };
 
 export type ServiceFeature = { title: string; desc: string };
@@ -120,6 +122,14 @@ export const SERVICE_PHOTOS: Record<string, { heroImage: string; gallery: string
       P("car-carrier-hero.jpeg"),
       P("car-carrier-flatbed.jpeg"),
       P("car-carrier-transport.jpeg"),
+    ],
+  },
+  "international-shipment": {
+    heroImage: P("mgt-team-truck.jpeg"),
+    gallery: [
+      P("mgt-loading-furniture.jpeg"),
+      P("cargo-loading-box.jpeg"),
+      P("mgt-packed-boxes.jpeg"),
     ],
   },
 };

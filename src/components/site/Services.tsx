@@ -9,6 +9,7 @@ import cargo from "@/assets/services/cargo.png";
 import goods from "@/assets/services/goods-transport-icon.png";
 import truckRent from "@/assets/services/truck-rent.png";
 import carCarrier from "@/assets/services/car-carrier.png";
+import international from "@/assets/services/international-shipment.png";
 
 const SERVICES = [
   { slug: "house-shifting", title: "House Shifting", desc: "Door-to-door home relocation in Karachi and across Pakistan, handled with care.", img: houseShifting },
@@ -20,6 +21,7 @@ const SERVICES = [
   { slug: "goods-transport", title: "Goods Transport", desc: "Nationwide goods transport with the right vehicle for any load.", img: goods },
   { slug: "truck-on-rent", title: "Truck on Rent", desc: "Suzuki to 40 ft trailers. Book the perfect truck for your move.", img: truckRent },
   { slug: "car-carrier", title: "Car Carrier", desc: "Safe city-to-city vehicle transport on covered and open carriers.", img: carCarrier },
+  { slug: "international-shipment", title: "International Shipment", desc: "Air freight, sea cargo and door-to-port delivery to destinations worldwide.", img: international },
 ];
 
 export function Services() {

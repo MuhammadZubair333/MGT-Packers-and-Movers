@@ -278,6 +278,37 @@
         { "q": "Can you pick up from a car showroom?", "a": "Yes, showroom and home pickups are both available." },
         { "q": "Can you ship more than one vehicle?", "a": "Yes, multi-car shipments are available on the same carrier." }
       ]
+    },
+    {
+      "slug": "international-shipment",
+      "title": "International Shipment",
+      "tagline": "Your cargo, delivered across the world",
+      "icon": "international-shipment",
+      "metaTitle": "International Shipment Services from Pakistan | MGT Packers & Movers",
+      "metaDescription": "Professional international shipment from Pakistan. Air freight, sea cargo, customs clearance and door-to-port delivery. Get a free quote on WhatsApp.",
+      "keywords": ["international shipment Pakistan", "air cargo Karachi", "sea freight Pakistan", "overseas moving Pakistan"],
+      "intro": "MGT Packers & Movers extends its trusted services beyond Pakistan's borders with professional international shipment solutions. Whether you need to send household goods, commercial cargo or personal effects to destinations worldwide, we handle the complete logistics chain — from pickup and professional export packing to customs documentation and delivery at your destination port or door.",
+      "features": [
+        { "title": "Air Freight", "desc": "Fast, reliable air cargo for urgent or high-value international shipments." },
+        { "title": "Sea Cargo (FCL & LCL)", "desc": "Full container and shared container options for large or small international loads." },
+        { "title": "Door-to-Port Service", "desc": "We pick up, pack and deliver your cargo to the origin port or airport." },
+        { "title": "Customs Documentation", "desc": "All declarations, packing lists and export paperwork handled by our team." },
+        { "title": "Export-Grade Packing", "desc": "Heavy-duty export cartons, wooden crating and moisture protection for long voyages." },
+        { "title": "Worldwide Coverage", "desc": "Shipping to the Middle East, UK, Europe, North America, Australia and beyond." }
+      ],
+      "process": [
+        { "step": "Enquiry & Quote", "desc": "Tell us what, where and when. We provide a complete landed-cost estimate within 24 hours." },
+        { "step": "Packing & Documentation", "desc": "Export-grade packing and all customs paperwork prepared by our team." },
+        { "step": "Pickup & Port Delivery", "desc": "Cargo collected from your location and delivered to the nominated port or airport." },
+        { "step": "Shipment Tracking", "desc": "Regular updates at every stage until your cargo reaches its destination." }
+      ],
+      "faqs": [
+        { "q": "Which countries do you ship to?", "a": "We ship to the Middle East, UK, Europe, USA, Canada, Australia and many more. Contact us with your destination for current availability and rates." },
+        { "q": "What is the difference between air and sea freight?", "a": "Air freight is faster (5-10 days) but costs more. Sea freight is more economical for large loads (20-45 days). We recommend the best option for your timeline and budget." },
+        { "q": "Do you handle customs clearance?", "a": "Yes. We prepare all export documentation, packing lists and declarations required for smooth customs clearance at the origin port." },
+        { "q": "Can I send household goods internationally?", "a": "Yes. We offer complete household relocation packing and international shipping for families moving abroad." },
+        { "q": "How do I get a quote?", "a": "Share your goods description, weight or volume estimate and destination on WhatsApp at 0300-1899303. We respond with a full quote within 24 hours." }
+      ]
     }
   ]
 }
