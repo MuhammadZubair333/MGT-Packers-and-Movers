@@ -9,7 +9,7 @@ import cargo from "@/assets/services/cargo-truck.webp";
 import goods from "@/assets/services/goods-transport-icon.png";
 import truckRent from "@/assets/services/truck-rent.png";
 import carCarrier from "@/assets/services/car-carrier.png";
-import international from "@/assets/services/international-shipment.png";
+import international from "@/assets/services/cargo-plane.png";
 
 const SERVICES = [
   { slug: "house-shifting", title: "House Shifting", desc: "Door-to-door home relocation in Karachi and across Pakistan, handled with care.", img: houseShifting },
