@@ -4,7 +4,6 @@ import mazdaOpen from "@/assets/fleet/mazda-open.png";
 import mazdaC from "@/assets/fleet/mazda-container.png";
 import t17 from "@/assets/fleet/truck-17.png";
 import t32 from "@/assets/fleet/truck-32.png";
-import flatbed from "@/assets/fleet/flatbed.jpeg";
 
 const FLEET = [
   { name: "Suzuki Pickup", desc: "Ideal for small moves & deliveries", img: suzuki },
@@ -13,7 +12,6 @@ const FLEET = [
   { name: "17 Feet Container", desc: "", img: mazdaC },
   { name: "20 Feet Container", desc: "", img: t17 },
   { name: "40 Feet Container", desc: "", img: t32 },
-  { name: "40 Feet Flatbed", desc: "", img: flatbed },
 ];
 
 export function Fleet() {
