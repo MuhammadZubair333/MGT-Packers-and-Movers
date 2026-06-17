@@ -1,6 +1,6 @@
 const ITEMS = [
   { img: "/photos/mgt-loading-furniture.jpeg", label: "Loading & Transport" },
-  { img: "/photos/mgt-wrapping-sofa.jpeg", label: "Furniture Wrapping" },
+  { img: "/photos/mgt-wrapping-sofa.jpeg", label: "Furniture Packing" },
   { img: "/photos/mgt-packing-house.jpeg", label: "Professional Packing" },
   { img: "/photos/mgt-packed-boxes.jpeg", label: "Ready for Delivery" },
 ];
