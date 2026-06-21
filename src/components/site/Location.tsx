@@ -3,7 +3,7 @@ import { SITE, telHref } from "@/lib/site";
 
 export function Location() {
   return (
-    <section className="py-20 sm:py-28">
+    <section className="py-20 sm:py-28" style={{ backgroundColor: "#F8FAFD" }}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <div className="mx-auto max-w-2xl text-center">
