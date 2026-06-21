@@ -44,13 +44,13 @@ export function Trust() {
               <div
                 key={i}
                 data-trust-card
-                className={`flex h-20 w-[200px] shrink-0 items-center justify-center rounded-2xl border border-border px-6 shadow-soft transition-shadow hover:shadow-card ${c.bg ?? "bg-white"}`}
+                className={`flex h-24 w-[200px] shrink-0 items-center justify-center rounded-2xl border border-border px-5 shadow-soft transition-shadow hover:shadow-card ${c.bg ?? "bg-white"}`}
               >
                 <img
                   src={c.logo}
                   alt={c.name}
                   loading="lazy"
-                  className="h-10 w-36 object-contain opacity-80 transition-opacity duration-300 hover:opacity-100"
+                  className="h-auto w-auto max-h-14 max-w-[160px] opacity-90 transition-opacity duration-300 hover:opacity-100"
                   onError={(e) => {
                     const card = e.currentTarget.parentElement;
                     if (card) card.style.display = "none";
