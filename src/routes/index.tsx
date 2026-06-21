@@ -11,6 +11,7 @@ import { TruckScene } from "@/components/site/TruckScene";
 import { QuoteForm } from "@/components/site/QuoteForm";
 import { Gallery } from "@/components/site/Gallery";
 import { Testimonials } from "@/components/site/Testimonials";
+import { Location } from "@/components/site/Location";
 import { FinalCTA } from "@/components/site/FinalCTA";
 import { Footer } from "@/components/site/Footer";
 import { FloatingActions } from "@/components/site/FloatingActions";
@@ -81,6 +82,7 @@ function HomePage() {
         <Fleet />
         <Gallery />
         <Testimonials />
+        <Location />
         <FinalCTA />
       </main>
       <Footer />
