@@ -142,9 +142,12 @@
 
 @keyframes marquee {
   from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  to   { transform: translateX(-50%); }
 }
-@utility animate-marquee { animation: marquee 30s linear infinite; }
+@utility animate-marquee {
+  animation: marquee 28s linear infinite;
+  will-change: transform;
+}
 
 /* ── TruckScene animations ──────────────────────────────────────── */
 @keyframes _scene-far  { to { transform: translateX(-50%); } }

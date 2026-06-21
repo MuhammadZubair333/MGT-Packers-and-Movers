@@ -29,7 +29,7 @@ const CLIENTS: { name: string; logo: string; bg?: string }[] = [
   },
 ];
 
-const TRACK = [...CLIENTS, ...CLIENTS, ...CLIENTS];
+const TRACK = [...CLIENTS, ...CLIENTS];
 
 export function Trust() {
   return (
@@ -38,19 +38,19 @@ export function Trust() {
         <p className="text-center text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground">
           Trusted by businesses and families across Pakistan
         </p>
-        <div className="mt-8 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-          <div className="flex w-max animate-marquee items-center gap-5">
+        <div className="mt-8 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_12%,black_88%,transparent)]">
+          <div className="flex w-max animate-marquee items-center gap-6 hover:[animation-play-state:paused]">
             {TRACK.map((c, i) => (
               <div
                 key={i}
                 data-trust-card
-                className={`flex h-20 min-w-[180px] flex-col items-center justify-center gap-2 rounded-2xl border border-border px-6 shadow-soft transition-shadow hover:shadow-card sm:min-w-[210px] ${c.bg ?? "bg-white"}`}
+                className={`flex h-20 w-[200px] shrink-0 items-center justify-center rounded-2xl border border-border px-6 shadow-soft transition-shadow hover:shadow-card ${c.bg ?? "bg-white"}`}
               >
                 <img
                   src={c.logo}
                   alt={c.name}
                   loading="lazy"
-                  className="h-9 w-auto max-w-[140px] object-contain opacity-85 transition-all duration-300 hover:opacity-100"
+                  className="h-10 w-36 object-contain opacity-80 transition-opacity duration-300 hover:opacity-100"
                   onError={(e) => {
                     const card = e.currentTarget.parentElement;
                     if (card) card.style.display = "none";
