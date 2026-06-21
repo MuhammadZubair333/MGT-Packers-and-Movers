@@ -73,12 +73,12 @@ function HomePage() {
         <Hero />
         <Trust />
         <TruckScene />
+        <QuoteForm />
         <Services />
         <WhyUs />
         <About />
         <Process />
         <Fleet />
-        <QuoteForm />
         <Gallery />
         <Testimonials />
         <FinalCTA />
