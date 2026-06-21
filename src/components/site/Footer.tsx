@@ -108,7 +108,14 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-4 py-5 text-xs text-white/60 sm:flex-row sm:px-6 lg:px-8">
           <p>© {new Date().getFullYear()} {SITE.name}. All rights reserved.</p>
-          <p>{SITE.website}</p>
+          <a
+            href="https://brandwings.online/"
+            target="_blank"
+            rel="noreferrer"
+            className="transition-colors hover:text-white"
+          >
+            Powered by <span className="font-semibold text-white/80">Brandwings</span>
+          </a>
         </div>
       </div>
     </footer>
